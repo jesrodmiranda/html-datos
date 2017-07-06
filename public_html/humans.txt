@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* TEAM */
+                            
+Name: Jesus Rodriguez Miranda                          
+Site: jesrodmiranda@gmail.com                 
+Twitter: metanauta1
+Location: Bogotá, Colombia
+
+							
+/* THANKS */
+						
+Name: Vivelab Bogotá - http://www.vivelabbogota.com
+
+/* SITE */
+                            
+Last update: 2017/06/30
+Standards: HTML5, CSS3   
+Components: Bootstrap 3, Modernizr, jQuery                    
+Software: CKAN
