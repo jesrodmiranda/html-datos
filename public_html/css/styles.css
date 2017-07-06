@@ -6772,13 +6772,9 @@ General
 body {
   font-family: 'DINPro';
   font-size: 14px;
-  background-image: url('../img/background_blue.png');
+  background-image: url('../img/background_blue_light.png');
   background-position: bottom;
   background-repeat: repeat;
-}
-.header-page {
-  padding-left: 15px!important;
-  padding-right: 15px!important;
 }
 footer {
   background-color: #27aae1;
@@ -6841,14 +6837,52 @@ a {
 .background-white {
   background-color: white;
 }
+.background-blue-dark {
+  background-color: #003f64;
+}
 .margin-left-3 {
   margin-left: 8px;
+}
+.inline {
+  display: inline;
+}
+.block {
+  display: block;
+}
+object {
+  pointer-events: none;
+}
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 /*
 Header
 */
 .top-bar {
+  margin: 0 auto;
+  width: 70%;
   height: 70px;
+}
+.side-1 {
+  float: left;
+  width: 15%;
+  height: 70px;
+}
+.side-1:after {
+  content: ' ';
+}
+.side-2 {
+  float: right;
+  width: 15%;
+  height: 70px;
+}
+.side-2:after {
+  content: ' ';
 }
 .top-slider {
   height: 342px;
@@ -6864,15 +6898,15 @@ Header
 }
 .logo-bogota-top {
   width: 70px;
-  margin-top: 6px;
-  margin-left: 15px;
+  height: 70px;
+  padding-top: 6px;
 }
 .logo-bogota-top object {
   text-align: right;
 }
 .inicia-sesion {
   height: 40px;
-  background-color: #f2f2f2;
+  background-color: #e6e6e6;
   text-align: right;
   padding-top: 10px;
 }
@@ -6946,7 +6980,7 @@ Slider
 }
 .entities span {
   position: relative;
-  top: -35px;
+  top: -15px;
 }
 .entities {
   margin: 0 auto;
@@ -6955,14 +6989,14 @@ Slider
 }
 .number-of-datasets span {
   position: relative;
-  top: -35px;
+  top: -15px;
 }
 /*
 Search box
 */
 .search-box {
   margin: 0 auto;
-  background-color: #f2f2f2;
+  background-color: #e6e6e6;
   width: 768px;
   padding-top: 30px;
   padding-left: 16px;

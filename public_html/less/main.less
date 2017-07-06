@@ -8,8 +8,9 @@
 @color-blue: #00CACF;
 @color-blue-dark: #003E65;
 @color-blue-middle: #27AAE1;
+@color-blue-back: #003f64;
 @color-orange: #FF7A6C;
-@color-gray-light: #F2F2F2;
+@color-gray-light: #E6E6E6;
 @color-gray: gray;
 @font-size-a1: 45px;
 @font-size-a2: 30px;
@@ -20,7 +21,6 @@
 @font-family: 'DINPro';
 
 
-
 /*
 General
 */
@@ -28,13 +28,9 @@ General
 body {
     font-family: @font-family;
     font-size: @font-size-a4;
-    background-image:  url('../img/background_blue.png');
+    background-image:  url('../img/background_blue_light.png');
     background-position: bottom;
     background-repeat: repeat;
-}
-.header-page {
-    padding-left: 15px!important;
-    padding-right: 15px!important;
 }
 footer {
     background-color: @color-blue-middle;
@@ -97,17 +93,54 @@ a {
 .background-white {
     background-color: white;
 }
+.background-blue-dark {
+    background-color: @color-blue-back;
+}
 .margin-left-3 {
     margin-left: 8px;
 }
-
+.inline {
+    display: inline;
+}
+.block {
+    display: block;
+}
+object{
+    pointer-events: none;
+}
+a.svg:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}
 
 /*
 Header
 */
 .top-bar {
+    margin: 0 auto;
+    width: 70%;
     height: 70px;
 
+}
+.side-1 {
+    float: left;
+    width: 15%;
+    height: 70px;
+}
+.side-1:after {
+    content: ' ';
+}
+.side-2 {
+    float: right;
+    width: 15%;
+    height: 70px;
+}
+.side-2:after {
+    content: ' ';
 }
 .top-slider {
     height: 342px;
@@ -123,8 +156,8 @@ Header
 }
 .logo-bogota-top {
     width: 70px;
-    margin-top: 6px;
-    margin-left: 15px;
+    height: 70px;
+    padding-top: 6px;
 }
 .logo-bogota-top object {
     text-align: right;
@@ -144,6 +177,7 @@ Header
 .menu {
     height: 30px;
 }
+
 
 /*
 Top Menu
@@ -211,7 +245,7 @@ Slider
 }
 .entities span {
     position: relative;
-    top: -35px;
+    top: -15px;
 }
 .entities {
     margin: 0 auto;
@@ -220,7 +254,7 @@ Slider
 }
 .number-of-datasets  span {
     position: relative;
-    top: -35px;
+    top: -15px;
 }
 
 
