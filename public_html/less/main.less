@@ -162,13 +162,13 @@ Header
 .logo-bogota-top object {
     text-align: right;
 }
-.inicia-sesion {
+.log-in {
     height: 40px;
     background-color: @color-gray-light;
     text-align: right;
     padding-top: 10px;
 }
-.inicia-sesion a {
+.log-in a {
     margin-right: 25px;
     text-transform: uppercase;
     font-weight: @font-weight-m;
@@ -224,6 +224,65 @@ ul, ol {
     margin-left: 1.3em;
 }
 .nav li a:active {
+    background-color: transparent;
+}
+
+
+.nav-login {
+    float: right;
+    margin-left: -20px;
+    z-index: 100;
+    margin-top: -2px;
+
+}
+.nav-login > li {
+    float:left;
+
+}
+.nav-login li a {
+    color: @color-blue;
+    font-size: @font-size-a4;
+    padding: 0;
+    display:block;
+    text-transform: uppercase;
+    font-weight: @font-weight-m;
+    background-color: transparent;
+}
+.nav-login li a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.nav-login li a:active {
+    background-color: transparent;
+}
+
+
+.nav-footer {
+    float: right;
+    margin-left: -40px;
+    z-index: 100;
+    margin-top: 10px;
+}
+nav-footer > li {
+    float:left;
+
+}
+.nav-footer li a {
+    color: white;
+    font-size: @font-size-a4;
+    padding: 0;
+    display: block;
+    text-transform: none;
+    font-weight: 300;
+    background-color: transparent;
+}
+.nav-footer li a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.nav-footer li a:active {
     background-color: transparent;
 }
 
