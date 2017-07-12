@@ -6816,9 +6816,6 @@ a {
 .text-right {
   text-align: right;
 }
-.margin-bt-5 {
-  margin-bottom: 5px;
-}
 .margin-bt-40 {
   margin-bottom: 40px;
 }
@@ -6874,13 +6871,8 @@ a.svg:after {
 .center {
   text-align: center;
 }
-.margin-10 {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.margin-3 {
-  margin-left: 8px;
-  margin-right: 8px;
+.margin-100 {
+  margin: 10px;
 }
 /*
 Header
@@ -7072,19 +7064,19 @@ Search box
 .search-box {
   margin: 0 auto;
   background-color: #003E65;
-  width: 800px;
+  width: 768px;
   padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-bottom: 30px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   z-index: 100;
   margin-top: -18px;
-  -webkit-box-shadow: 0px 3px 10px 3px rgba(50, 50, 50, 0.54);
-  -moz-box-shadow: 0px 3px 10px 3px rgba(50, 50, 50, 0.54);
-  box-shadow: 0px 3px 10px 3px rgba(50, 50, 50, 0.54);
+  -webkit-box-shadow: 0px 3px 10px 3px rgba(199, 199, 199, 0.64);
+  -moz-box-shadow: 0px 3px 10px 3px rgba(199, 199, 199, 0.64);
+  box-shadow: 0px 3px 10px 3px rgba(199, 199, 199, 0.64);
 }
 .background-search {
   background-color: #FF7A6C;

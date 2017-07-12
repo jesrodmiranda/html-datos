@@ -6878,10 +6878,6 @@ a.svg:after {
   margin-left: 100px;
   margin-right: 100px;
 }
-.margin-3 {
-  margin-left: 8px;
-  margin-right: 8px;
-}
 /*
 Header
 */
@@ -7082,9 +7078,9 @@ Search box
   border-radius: 5px;
   z-index: 100;
   margin-top: -18px;
-  -webkit-box-shadow: 0px 3px 10px 3px rgba(50, 50, 50, 0.54);
-  -moz-box-shadow: 0px 3px 10px 3px rgba(50, 50, 50, 0.54);
-  box-shadow: 0px 3px 10px 3px rgba(50, 50, 50, 0.54);
+  -webkit-box-shadow: 0px 3px 10px 3px rgba(50, 50, 50, 0.64);
+  -moz-box-shadow: 0px 3px 10px 3px rgba(50, 50, 50, 0.64);
+  box-shadow: 0px 3px 10px 3px rgba(50, 50, 50, 0.64);
 }
 .background-search {
   background-color: #FF7A6C;
