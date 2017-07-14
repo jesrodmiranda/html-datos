@@ -9,35 +9,19 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="author" href="humans.txt" />
 
-        <!--link rel="stylesheet/less" type="text/css" href="less/styles.less" /-->
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        
-        <!-- set options before less.js script 
-        <script>
-            less = {
-                env: "production",
-                async: false,
-                fileAsync: false,
-                poll: 1000,
-                functions: {},
-                dumpLineNumbers: "comments",
-                relativeUrls: false,
-                rootpath: ":/a.com/",
-                errorReporting: "console"
-            };
-        </script>
-        <script src="js/vendor/less.js" type="text/javascript"></script-->    
- 
+
     </head>
     <body>
         <!--[if lt IE 9]>
             <p class="browserupgrade">Está usando un navegador <strong>muy viejo</strong>. Por favor visita <a href="http://browsehappy.com/"> este sitio</a> para actualizar el navegador y disfrutar de una mejor experiencia para este sitio web.</p>
         <![endif]-->
 
+        <!-- header -->
         <header class="background-white">
             <div class="container">
                 <div class="top-bar">
-                    <div class="col-md-3 background-blue-dark">
+                    <div class="col-md-3 col-sm-7 background-blue-dark">
                         <div class="logo">
                             <a href="index.html" class="svg"><object type="image/svg+xml" data="img/logo.svg" >Su navegador no soporta SVG</object></a>                       
                         </div>
@@ -47,16 +31,15 @@
                             <ul class="nav-login"><li><a href="#" id="login-to-entities">Inicio sesion para entidades</a></li></ul>                    
                         </div>
                         <div class="row menu">
-
+                            <div class="toggle-menu">&#9776;</div>
                             <ul class="nav">
                                 <li><a href="#" id="datasets">Conjunto de datos</a></li>
                                 <li><a href="#" id="entities">Entidades</a></li>
                                 <li><a href="#" id="about-us">Acerda de</a></li>
                             </ul>
-
                         </div>
                     </div>
-                    <div class="col-md-1 background-white">
+                    <div class="col-md-1 background-white">                        
                         <div class="logo-bogota-top">
                             <object type="image/svg+xml" data="img/logo_bogota_mejor_para_todos.svg" >
                                 Su navegador no soporta SVG
@@ -67,338 +50,338 @@
             </div>
         </header>
 
-
+        <!-- slider -->
         <div class="top-slider">
             <div class="container">
                 <div class="messages-slider">
-                    <div class="row">
-                        <div class="col-md-6 text-a2 m blue-dark">Frase de bienvenida sobre los datos abiertos de la ciudad<br>
-                            <a href="#" class="btn btn-dataset" role="button" id="know-more">Saber más</a>
-                        </div>
-                        <div class="col-md-6 text-a2 m orange">
-                            <div class="col-md-4">&nbsp;</div>
-                            <div class="col-md-8">
-                                <div class="number-of-datasets text-a1 m text-center">0 <span class="block text-a3 m blue-dark">Conjunto de datos</span></div>
-                                <div class="entities text-a1 m center">000 <span class="block text-a3 m blue-dark">Entidades</span></div>
-                            </div>
+
+                    <div class="col-md-6 text-a2 m blue-dark">Frase de bienvenida sobre los datos abiertos de la ciudad
+                        <span class="margin-bt-inline">&nbsp;</span>
+                        <a href="#" class="btn btn-dataset" role="button" id="know-more">Saber más</a>
+                    </div>
+                    <div class="col-md-6 text-a2 m orange number-data">
+                        <div class="col-md-4">&nbsp;</div>
+                        <div class="col-md-8">
+                            <div class="number-of-datasets text-a1 m text-center">0 <span class="block text-a3 m blue-dark">Conjunto de datos</span></div>
+                            <div class="entities text-a1 m center">000 <span class="block text-a3 m blue-dark">Entidades</span></div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
+        <!-- search datasets -->
 
-            <div class="container background-white">
-                <div class="search-box">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="input-group"> 
-                                <input class="form-control" aria-label="Búsqueda de Datasets" placeholder="Búsqueda de conjunto de datos"> 
-                                <div class="input-group-btn"> 
-                                    <button type="button" class="btn btn-default background-search" aria-label="Buscar" id="search-datasets"><span class="glyphicon glyphicon-search"></span></button> 
-                                </div> 
-                            </div>
+        <div class="container background-white">
+            <div class="search-box">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="input-group"> 
+                            <input class="form-control" aria-label="Búsqueda de Datasets" placeholder="Búsqueda de conjunto de datos"> 
+                            <div class="input-group-btn"> 
+                                <button type="button" class="btn btn-default background-search" aria-label="Buscar" id="search-datasets"><span class="glyphicon glyphicon-search"></span></button> 
+                            </div> 
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="margin-bt-18"></div>
-                        <div class="col-md-12"><span class="blue-middle text-a3 m">Explore conjuntos de datos por categorías</span></div>
-                        <div class="row margin-bt-25"></div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Gestión pública</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Gobierno</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Hacienda</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Planeaci&oacute;n</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Desarrollo Económico, Industria y Turismo</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Educaci&oacute;n</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Salud</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Integraci&oacute;n social</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Cultura, recreaci&oacute;n y deporte</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Ambiente</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Movilidad</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">H&aacute;bitat</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Mujeres</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Seguridad, convivencia y justicia</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Gesti&oacute;n jur&iacute;dica</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">V&iacute;ctimas, paz y reconciliaci&oacute;n</a></div>
-                        </div>
-                        <div class="col-md-3 margin-bt-5">
-                            <div class="icon-dataset">
-                                <object type="image/svg+xml" data="img/icono_prueba.svg" >
-                                    Su navegador no soporta SVG
-                                </object>
-                            </div>
-                            <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category">Inspecci&oacute;n, vigilancia y control</a></div>
-                        </div>
-                    </div>
-
+                    </div>                    
                 </div>
-
-                <div class="margin-bt-40"></div>
-
-                <div class="text-a3 m center-block text-center blue-middle">Conjuntos de datos actualizados recientemente</div>
-
-                <div class="margin-bt-30"></div>
-
-                <div class="row margin-10">
-                    
-                    <div class="col-md-3">
-                        <div class="dataset-home">
-
-                            <div class="dataset-home-photo margin-bt-20"><img src="img/dataset.png" alt="Nombre del Dataset"/></div>
-                            <div class="text-a5 blue-middle margin-bt-20 margin-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-
-                            <div class="block-left margin-left-3">
-                                <div class="icon-dataset-addon">
-                                    <object type="image/svg+xml" data="img/downloads.svg" >
-                                        Su navegador no soporta SVG
-                                    </object>
-                                </div>
-                                <div class="name-addon text-a5">999 descargas</div>
-                            </div>
-                            <div class="block-right">
-                                <div class="icon-dataset-addon">
-                                    <object type="image/svg+xml" data="img/visits.svg" >
-                                        Su navegador no soporta SVG
-                                    </object>
-                                </div>
-                                <div class="name-addon text-a5">999 visitas</div>                                
-                            </div>
-                            <br>
-                            <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
-                            <br>
-                            <div class="line-blue"></div>
-
-                            <div class="icon-entity text-center"><img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="" /></div>
-                            <div class="name-entity text-a5 m blue-middle">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
-                            <br><br><br><br>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="dataset-home">
-                            <div class="dataset-home-photo margin-bt-20"><img src="img/dataset_01.png" alt="Nombre del Dataset"/></div>
-                            <div class="text-a5 blue-middle margin-bt-20 margin-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-
-                            <div class="block-left margin-left-3">
-                                <div class="icon-dataset-addon">
-                                    <object type="image/svg+xml" data="img/downloads.svg" >
-                                        Su navegador no soporta SVG
-                                    </object>
-                                </div>
-                                <div class="name-addon text-a5">999 descargas</div>
-                            </div>
-                            <div class="block-right">
-                                <div class="icon-dataset-addon">
-                                    <object type="image/svg+xml" data="img/visits.svg" >
-                                        Su navegador no soporta SVG
-                                    </object>
-                                </div>
-                                <div class="name-addon text-a5">999 visitas</div>                                
-                            </div>
-                            <br>
-                            <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
-                            <br>
-                            <div class="line-blue"></div>
-
-                            <div class="icon-entity text-center"><img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="" /></div>
-                            <div class="name-entity text-a5 m blue-middle">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
-                            <br><br><br><br>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="dataset-home">
-
-                            <div class="dataset-home-photo margin-bt-20"><img src="img/dataset_02.png" alt="Nombre del Dataset"/></div>
-                            <div class="text-a5 blue-middle margin-bt-20 margin-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-
-                            <div class="block-left margin-left-3">
-                                <div class="icon-dataset-addon">
-                                    <object type="image/svg+xml" data="img/downloads.svg" >
-                                        Su navegador no soporta SVG
-                                    </object>
-                                </div>
-                                <div class="name-addon text-a5">999 descargas</div>
-                            </div>
-                            <div class="block-right">
-                                <div class="icon-dataset-addon">
-                                    <object type="image/svg+xml" data="img/visits.svg" >
-                                        Su navegador no soporta SVG
-                                    </object>
-                                </div>
-                                <div class="name-addon text-a5">999 visitas</div>                                
-                            </div>
-                            <br>
-                            <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
-                            <br>
-                            <div class="line-blue"></div>
-
-                            <div class="icon-entity text-center"><img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="" ></div>
-                            <div class="name-entity text-a5 m blue-middle">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
-                            <br><br><br><br>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="dataset-home">
-
-                            <div class="dataset-home-photo margin-bt-20"><img src="img/dataset_03.png" alt="Nombre del Dataset"/></div>
-                            <div class="text-a5 blue-middle margin-bt-20 margin-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-
-                            <div class="block-left margin-left-3">
-                                <div class="icon-dataset-addon">
-                                    <object type="image/svg+xml" data="img/downloads.svg" >
-                                        Su navegador no soporta SVG
-                                    </object>
-                                </div>
-                                <div class="name-addon text-a5">999 descargas</div>
-                            </div>
-                            <div class="block-right">
-                                <div class="icon-dataset-addon">
-                                    <object type="image/svg+xml" data="img/visits.svg" >
-                                        Su navegador no soporta SVG
-                                    </object>
-                                </div>
-                                <div class="name-addon text-a5">999 visitas</div>                                
-                            </div>
-                            <br>
-                            <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
-                            <br>
-                            <div class="line-blue"></div>
-
-                            <div class="icon-entity text-center"><img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="" /></div>
-                            <div class="name-entity text-a5 m blue-middle">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
-                            <br><br><br><br>
-
-                        </div>
-                    </div>
-                    
+                <div class="row text-category">
+                    <div class="col-md-12 col-sm-12 text-center "><span class="blue-middle text-a3 m ">Explora conjunto de datos por categorías</span></div>
                 </div>
-
-                <div class="margin-bt-40"></div>
+                <div class="row layer-category">
+                    <div class="margin-bt-18"></div>
+                    <div class="col-md-12"><span class="blue-middle text-a3 m">Explore conjuntos de datos por categorías</span></div>
+                    <div class="row margin-bt-25"></div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-01">Gestión pública</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-02">Gobierno</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-03">Hacienda</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-04">Planeaci&oacute;n</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-05">Desarrollo Económico, Industria y Turismo</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-06">Educaci&oacute;n</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-07">Salud</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-08">Integraci&oacute;n social</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-09">Cultura, recreaci&oacute;n y deporte</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-10">Ambiente</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-11">Movilidad</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-12">H&aacute;bitat</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-13">Mujeres</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-14">Seguridad, convivencia y justicia</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-15">Gesti&oacute;n jur&iacute;dica</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-16">V&iacute;ctimas, paz y reconciliaci&oacute;n</a></div>
+                    </div>
+                    <div class="col-md-3 margin-bt-5">
+                        <div class="icon-dataset">
+                            <object type="image/svg+xml" data="img/icono_prueba.svg" >
+                                Su navegador no soporta SVG
+                            </object>
+                        </div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-17">Inspecci&oacute;n, vigilancia y control</a></div>
+                    </div>
+                </div>
 
             </div>
-        </div> <!-- /container -->
+        </div>
 
+        <div class="margin-bt-40"></div>
+        <!-- Datasets list -->
+
+        <div class="container">
+
+            <div class="text-a3 m text-center blue-middle">Conjuntos de datos actualizados recientemente</div>
+
+            <div class="margin-bt-30"></div>
+            <div class="row margin-10">
+
+                <div class="col-md-3">
+                    <div class="dataset-home">
+
+                        <div class="dataset-home-photo margin-bt-20"><img src="img/dataset.png" alt="Nombre del conjunto de datos"/></div>
+                        <div class="text-a5 blue-middle margin-bt-20 margin-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+
+                        <div class="block-left margin-left-3">
+                            <div class="icon-dataset-addon">
+                                <object type="image/svg+xml" data="img/downloads.svg" >
+                                    Su navegador no soporta SVG
+                                </object>
+                            </div>
+                            <div class="name-addon text-a5">999 descargas</div>
+                        </div>
+                        <div class="block-right">
+                            <div class="icon-dataset-addon">
+                                <object type="image/svg+xml" data="img/visits.svg" >
+                                    Su navegador no soporta SVG
+                                </object>
+                            </div>
+                            <div class="name-addon text-a5">999 visitas</div>                                
+                        </div>
+                        <br>
+                        <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
+                        <br>
+                        <div class="line-blue"></div>
+
+                        <div class="icon-entity text-center"><img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="" /></div>
+                        <div class="name-entity text-a5 m blue-middle">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
+                        <br><br><br><br>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="dataset-home">
+                        <div class="dataset-home-photo margin-bt-20"><img src="img/dataset_01.png" alt="Nombre del conjunto de datos"/></div>
+                        <div class="text-a5 blue-middle margin-bt-20 margin-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+
+                        <div class="block-left margin-left-3">
+                            <div class="icon-dataset-addon">
+                                <object type="image/svg+xml" data="img/downloads.svg" >
+                                    Su navegador no soporta SVG
+                                </object>
+                            </div>
+                            <div class="name-addon text-a5">999 descargas</div>
+                        </div>
+                        <div class="block-right">
+                            <div class="icon-dataset-addon">
+                                <object type="image/svg+xml" data="img/visits.svg" >
+                                    Su navegador no soporta SVG
+                                </object>
+                            </div>
+                            <div class="name-addon text-a5">999 visitas</div>                                
+                        </div>
+                        <br>
+                        <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
+                        <br>
+                        <div class="line-blue"></div>
+
+                        <div class="icon-entity text-center"><img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="" /></div>
+                        <div class="name-entity text-a5 m blue-middle">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
+                        <br><br><br><br>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="dataset-home">
+
+                        <div class="dataset-home-photo margin-bt-20"><img src="img/dataset_02.png" alt="Nombre del conjunto de datos"/></div>
+                        <div class="text-a5 blue-middle margin-bt-20 margin-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+
+                        <div class="block-left margin-left-3">
+                            <div class="icon-dataset-addon">
+                                <object type="image/svg+xml" data="img/downloads.svg" >
+                                    Su navegador no soporta SVG
+                                </object>
+                            </div>
+                            <div class="name-addon text-a5">999 descargas</div>
+                        </div>
+                        <div class="block-right">
+                            <div class="icon-dataset-addon">
+                                <object type="image/svg+xml" data="img/visits.svg" >
+                                    Su navegador no soporta SVG
+                                </object>
+                            </div>
+                            <div class="name-addon text-a5">999 visitas</div>                                
+                        </div>
+                        <br>
+                        <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
+                        <br>
+                        <div class="line-blue"></div>
+
+                        <div class="icon-entity text-center"><img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="" ></div>
+                        <div class="name-entity text-a5 m blue-middle">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
+                        <br><br><br><br>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="dataset-home">
+                        <div class="dataset-home-photo margin-bt-20"><img src="img/dataset_03.png" alt="Nombre del conjunto de datos"/></div>
+                        <div class="text-a5 blue-middle margin-bt-20 margin-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+                        <div class="block-left margin-left-3">
+                            <div class="icon-dataset-addon">
+                                <object type="image/svg+xml" data="img/downloads.svg" >
+                                    Su navegador no soporta SVG
+                                </object>
+                            </div>
+                            <div class="name-addon text-a5">999 descargas</div>
+                        </div>
+                        <div class="block-right">
+                            <div class="icon-dataset-addon">
+                                <object type="image/svg+xml" data="img/visits.svg" >
+                                    Su navegador no soporta SVG
+                                </object>
+                            </div>
+                            <div class="name-addon text-a5">999 visitas</div>                                
+                        </div>
+                        <br>
+                        <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
+                        <br>
+                        <div class="line-blue"></div>
+                        <div class="icon-entity text-center"><img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="" /></div>
+                        <div class="name-entity text-a5 m blue-middle">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
+                        <br><br><br><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="margin-bt-40"></div>
 
         <footer>
             <div class="container">
-                <div class="col-md-2 white">
+                <div class="col-md-3 white">
 
                     <ul class="nav-footer">
                         <li><a href="">Acerca de Datos Abiertos</a></li>
@@ -407,8 +390,8 @@
                     </ul>
 
                 </div>
-                <div class="col-md-8">&nbsp;</div>
-                <div class="col-md-2"><img src="img/logo_secretaria.svg" alt="" /></div>
+                <div class="col-md-6 col-sm-4">&nbsp;</div>
+                <div class="col-md-3 center-block center"><img src="img/logo_secretaria.svg" alt="" /></div>
             </div>
         </footer>
 

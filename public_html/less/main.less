@@ -3,6 +3,8 @@
 */
 
 
+
+
 @import "fonts.less";
 
 @color-blue: #00CACF;
@@ -19,6 +21,12 @@
 @font-size-a4: 14px;
 @font-size-a5: 12px;
 @font-weight-m: 500;
+@font-size-a1-mobile: 26px;
+@font-size-a2-mobile: 20px;
+@font-size-a3-mobile: 14px;
+@font-size-a4-mobile: 14px;
+@font-size-a5-mobile: 12px;
+@font-weight-m-mobile: 500;
 @font-family: 'DINPro';
 
 
@@ -91,6 +99,10 @@ a {
 .margin-bt-30 {
     margin-bottom: 30px;
 }
+.margin-bt-inline {
+    display:table-cell;
+    line-height: 1px;
+}
 .background-white {
     background-color: white;
 }
@@ -146,7 +158,6 @@ Header
     margin: 0 auto;
     width: 100%;
     height: 70px;
-
 }
 .side-1 {
     float: left;
@@ -203,10 +214,12 @@ Header
     height: 30px;
 }
 
-
 /*
 Top Menu
 */
+.toggle-menu {
+    display: none;
+}
 ul, ol {
     list-style:none;
 }
@@ -219,7 +232,6 @@ ul, ol {
 }
 .nav > li {
     float:left;
-
 }
 .nav li a {
     color: @color-orange;
@@ -250,7 +262,9 @@ ul, ol {
     background-color: transparent;
 }
 
-
+/*
+Login Menu
+*/
 .nav-login {
     float: right;
     margin-left: -20px;
@@ -280,7 +294,9 @@ ul, ol {
     background-color: transparent;
 }
 
-
+/*
+Footer Menu
+*/
 .nav-footer {
     float: right;
     margin-left: -40px;
@@ -316,9 +332,6 @@ Slider
     margin-top: 60px;
     margin-left: 128px;
     margin-right: 128px;
-}
-.sentence {
-    width: 400px;
 }
 .number-of-datasets {
     margin: 0 auto;
@@ -366,6 +379,9 @@ Search box
     border-color:  @color-orange;
     color: #fff;
 }
+.text-category {
+    display: none;
+}
 
 /*
 Dataset list
@@ -397,7 +413,7 @@ Dataset list
 Last Datasets
 */
 .dataset-home {
-    height: 350px;
+    height: 325px;
     width: 225px;
     background-color: #f7f7f7;
     margin: 0 auto;
@@ -444,8 +460,6 @@ Last Datasets
     float: right;
     width: 70%;
 }
-
-
 
 
 /*
