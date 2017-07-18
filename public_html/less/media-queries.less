@@ -36,15 +36,10 @@ Media queries
         height: 70px;
     }
     .toggle-menu {
-        display: block;
         font-size: 30px;
-        width: 100%;
-        float: right;
+
         color: @color-orange;
-        text-align: right;
-        padding-right: 5px;
-        bottom: 16px;
-        position: absolute;
+
     }
     .logo {
         width: 320px;
@@ -75,8 +70,35 @@ Media queries
     .menu {
         height: 0px;
     }
-    .nav {
+    /*.nav {
         visibility: hidden;
+    }*/
+    a.navbar-toggle {
+        padding-right: 0;
+        margin-top: 12px;
+        margin-right: 0;
+    }
+    #navbar {
+        background-color: white;
+        position: relative;
+        z-index: 1;
+
+    }
+    .nav li a {
+        color: @color-orange;
+        font-size: @font-size-a3-mobile;
+        font-weight: @font-weight-m-mobile;
+        text-align: right;
+    }
+    .nav li a{
+        border-bottom: 1px solid @color-blue-dark;
+    }
+    .nav li .login-to-entities{
+        border: none;
+    }
+    .login-to-entities {
+        color: @color-blue !important;
+
     }
     .search-box {
         margin: 0 auto;
@@ -95,13 +117,21 @@ Media queries
         box-shadow: none;
 
     }
+    .icon-dataset {
+        padding: 0;
+        padding-left: 40px;
+
+    }
+    .layer-category {
+        display: none;
+    }
     .text-category {
         display: block;
         top: 5px;
         padding: 15px 10px 10px 10px;/* top=1em, right=2em, bottom=3em, left=2em */      
     }
-    .layer-category {
-        display: none;
+    .name-category {
+        padding-left: 30px;
     }
     .number-data {
         display: none;
@@ -189,6 +219,47 @@ iPad 3
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
     /* Styles */
+    .nav {
+        float: right;
+        margin-left: -20px;
+        z-index: 100;
+        margin-top: -3px;
+
+    }
+    .nav > li {
+        float:left;
+    }
+
+    .nav li a {
+
+        color: @color-orange;
+        font-size: @font-size-a4;
+        font-weight: @font-weight-m;
+        padding: 0;
+        display:block;
+        text-transform: uppercase;
+
+        background-color: transparent;
+    }
+    .nav li a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    .nav li a:before {
+        content:url('../img/pipe.png');
+        margin-right: 1.3em;
+        font-size: 21px;
+        position:relative;
+
+    }
+    .nav li a:after {
+        content: '';
+        font-size: 21px;
+        margin-left: 1.3em;
+    }
+    .nav li a:active {
+        background-color: transparent;
+    }
 }
 
 /* Large screens ----------- */

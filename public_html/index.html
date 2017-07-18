@@ -5,11 +5,11 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Datos Abiertos Bogotá</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="author" href="humans.txt" />
 
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="less/styles.css">
 
     </head>
     <body>
@@ -20,33 +20,53 @@
         <!-- header -->
         <header class="background-white">
             <div class="container">
-                <div class="top-bar">
-                    <div class="col-md-3 col-sm-7 background-blue-dark">
-                        <div class="logo">
-                            <a href="index.html" class="svg"><object type="image/svg+xml" data="img/logo.svg" >Su navegador no soporta SVG</object></a>                       
+                <div class="top-bar row">
+                    <div class="col-md-3 col-xs-12 background-blue-dark">
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <div class="logo">
+                                    <a href="index.html" class="svg"><object type="image/svg+xml" data="img/logo.svg" >Su navegador no soporta SVG</object></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-xs-offset-1">
+                            <a  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                                    aria-expanded="false" aria-controls="navbar">
+                                <object type="image/svg+xml" data="img/icono_menu.svg" class="icon-menu">
+                                    Su navegador no soporta SVG
+                                </object>
+                            </a>
+                            </div>
                         </div>
+
                     </div>
+
+
+
                     <div class="col-md-8 background-white">
                         <div class="row log-in">
-                            <ul class="nav-login"><li><a href="#" id="login-to-entities">Inicio sesion para entidades</a></li></ul>                    
+                            <ul class="nav-login"><li><a href="#" class="login-to-entities">Inicio sesion para entidades</a></li></ul>
                         </div>
                         <div class="row menu">
-                            <div class="toggle-menu">&#9776;</div>
-                            <ul class="nav">
-                                <li><a href="#" id="datasets">Conjunto de datos</a></li>
-                                <li><a href="#" id="entities">Entidades</a></li>
-                                <li><a href="#" id="about-us">Acerda de</a></li>
-                            </ul>
+
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav">
+                                    <li><a href="#" id="datasets">Conjunto de datos</a></li>
+                                    <li><a href="#" id="entities">Entidades</a></li>
+                                    <li><a href="#" id="about-us">Acerda de</a></li>
+                                    <li class="visible-xs"><a href="#" class="login-to-entities">Inicio sesion para entidades</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-1 background-white">                        
+                    <div class="col-md-1 background-white">
                         <div class="logo-bogota-top">
                             <object type="image/svg+xml" data="img/logo_bogota_mejor_para_todos.svg" >
                                 Su navegador no soporta SVG
-                            </object>                               
+                            </object>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </header>
 
@@ -77,30 +97,37 @@
             <div class="search-box">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
-                        <div class="input-group"> 
-                            <input class="form-control" aria-label="Búsqueda de Datasets" placeholder="Búsqueda de conjunto de datos"> 
-                            <div class="input-group-btn"> 
-                                <button type="button" class="btn btn-default background-search" aria-label="Buscar" id="search-datasets"><span class="glyphicon glyphicon-search"></span></button> 
-                            </div> 
+                        <div class="input-group">
+                            <input class="form-control" aria-label="Búsqueda de Datasets" placeholder="Búsqueda de conjunto de datos">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default background-search" aria-label="Buscar" id="search-datasets"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="row text-category">
-                    <div class="col-md-12 col-sm-12 text-center "><span class="blue-middle text-a3 m ">Explora conjunto de datos por categorías</span></div>
+                    <div class="col-md-12 col-sm-12 text-center "><span class="blue-middle text-a3 m ">Explora conjunto de datos por categorías</span>
+                        <a class="icon-row-direction collapsed" data-toggle="collapse" data-target="#demo" aria-expanded="false" aria-controls="navbar">
+                        <object type="image/svg+xml" data="img/icono_desplegar_a.svg" class="icon-row-size icon-row-a">
+                            Su navegador no soporta SVG
+                        </object>
+
+                    </a>
+                        </div>
                 </div>
-                <div class="row layer-category">
-                    <div class="margin-bt-18"></div>
-                    <div class="col-md-12"><span class="blue-middle text-a3 m">Explore conjuntos de datos por categorías</span></div>
-                    <div class="row margin-bt-25"></div>
-                    <div class="col-md-3 margin-bt-5">
+                <div class="row layer-category" id="demo" class="collapse">
+                    <div class="margin-bt-18 hidden-xs"></div>
+
+                    <div class="row margin-bt-25 hidden-xs"></div>
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
                             </object>
                         </div>
-                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-01">Gestión pública</a></div>
+                        <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-01">Gestión Pública</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -108,7 +135,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-02">Gobierno</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -116,7 +143,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-03">Hacienda</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -124,7 +151,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-04">Planeaci&oacute;n</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -132,7 +159,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-05">Desarrollo Económico, Industria y Turismo</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -140,7 +167,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-06">Educaci&oacute;n</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -148,7 +175,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-07">Salud</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -156,7 +183,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-08">Integraci&oacute;n social</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -164,7 +191,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-09">Cultura, recreaci&oacute;n y deporte</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -172,7 +199,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-10">Ambiente</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -180,7 +207,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-11">Movilidad</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -188,7 +215,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-12">H&aacute;bitat</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -196,7 +223,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-13">Mujeres</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -204,7 +231,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-14">Seguridad, convivencia y justicia</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -212,7 +239,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-15">Gesti&oacute;n jur&iacute;dica</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -220,7 +247,7 @@
                         </div>
                         <div class="name-category text-a5 m blue-dark"><a href="#" id="link-category-16">V&iacute;ctimas, paz y reconciliaci&oacute;n</a></div>
                     </div>
-                    <div class="col-md-3 margin-bt-5">
+                    <div class="col-xs-12 col-md-3 margin-bt-5">
                         <div class="icon-dataset">
                             <object type="image/svg+xml" data="img/icono_prueba.svg" >
                                 Su navegador no soporta SVG
@@ -263,7 +290,7 @@
                                     Su navegador no soporta SVG
                                 </object>
                             </div>
-                            <div class="name-addon text-a5">999 visitas</div>                                
+                            <div class="name-addon text-a5">999 visitas</div>
                         </div>
                         <br>
                         <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
@@ -296,7 +323,7 @@
                                     Su navegador no soporta SVG
                                 </object>
                             </div>
-                            <div class="name-addon text-a5">999 visitas</div>                                
+                            <div class="name-addon text-a5">999 visitas</div>
                         </div>
                         <br>
                         <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
@@ -330,7 +357,7 @@
                                     Su navegador no soporta SVG
                                 </object>
                             </div>
-                            <div class="name-addon text-a5">999 visitas</div>                                
+                            <div class="name-addon text-a5">999 visitas</div>
                         </div>
                         <br>
                         <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
@@ -362,7 +389,7 @@
                                     Su navegador no soporta SVG
                                 </object>
                             </div>
-                            <div class="name-addon text-a5">999 visitas</div>                                
+                            <div class="name-addon text-a5">999 visitas</div>
                         </div>
                         <br>
                         <span class="text-a5 gray margin-left-3" style="padding-bottom: 8px;">Última actualización: 08/06/2017</span>
@@ -386,7 +413,7 @@
                     <ul class="nav-footer">
                         <li><a href="">Acerca de Datos Abiertos</a></li>
                         <li><a href="http://docs.ckan.org/en/ckan-2.6.2/api/">API CKAN</a></li>
-                        <li><a href="http://www.ckan.org/">CKAN Association</a></li>                        
+                        <li><a href="http://www.ckan.org/">CKAN Association</a></li>
                     </ul>
 
                 </div>
