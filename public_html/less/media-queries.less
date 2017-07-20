@@ -177,18 +177,7 @@ Media queries
     }   
 }
 
-@media only screen and (min-width :768px) {
-    /* Styles */
-    //.navbar-collapse.collapse {
-    //    display: none !important;
-    //}
-    //.container {
-    //    width: 100%;
-    //}
-    //.navbar-toggle {
-    //    display: block;
-    //}
-}
+
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (max-width :992px) {
@@ -322,6 +311,24 @@ Media queries
 }
 
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation : landscape){
+    /* Styles */
+
+    .dataset-updated{
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (orientation : portrait){
+    /* Styles */
+
+    .dataset-updated{
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+}
+
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
     /* Styles */
