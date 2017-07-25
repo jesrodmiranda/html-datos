@@ -1,3 +1,7 @@
+/*/styles
+    Created on : 28/06/2017, 03:14:27 PM
+    Author     : Jesus Rodriguez Miranda
+*/
 /*
     Created on : 28/06/2017, 04:09:49 PM
 */
@@ -7343,7 +7347,7 @@ Test
   margin-bottom: 12px;
 }
 .dataset-link-blue-middle {
-  color: #27AAE1;
+  color: #27aae1;
 }
 .icon-download-one,
 .icon-views,
@@ -7403,15 +7407,15 @@ Test
   margin-left: 25px;
 }
 .top-breadcrumb a {
-  color: #FF7A6C;
+  color: #ff7a6c;
 }
 .sort {
-  color: #FF7A6C;
+  color: #ff7a6c;
   font-size: 14px;
   font-weight: normal;
 }
 #sort {
-  background-color: #003E65;
+  background-color: #003e65;
   border: 0px;
   color: white;
 }
