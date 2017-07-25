@@ -6946,6 +6946,9 @@ a {
 .text-a5 {
   font-size: 12px;
 }
+.l {
+  font-weight: 200;
+}
 .m {
   font-weight: 500;
 }
@@ -7320,6 +7323,101 @@ Test
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid #ddd;
   border: 1px solid rgba(86, 61, 124, 0.2);
+}
+.dataset-item {
+  margin-left: 64px;
+  margin-bottom: 30px;
+}
+.dataset-date {
+  display: inline-block;
+}
+.dataset-display {
+  display: inherit;
+}
+.line-blue-light {
+  height: 1px;
+  background-color: #8de1ff;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.line-grey-light {
+  height: 1px;
+  background-color: darkgrey;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.dataset-link-blue-middle {
+  color: #27AAE1;
+}
+.icon-download-one,
+.icon-views,
+.dataset-categories {
+  font-size: 20px;
+}
+.downloads-count,
+.views-count {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 200;
+  display: inline-block;
+  vertical-align: super;
+}
+.dataset-analytics {
+  position: relative;
+}
+.dataset-description {
+  height: 100px;
+  text-align: justify;
+}
+.format-type {
+  height: 20px;
+  width: 50px;
+  display: inline-block;
+  color: #FFF;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.format-type.csv {
+  background-color: orange;
+}
+.format-type.xml {
+  background-color: olivedrab;
+}
+.format-type.json {
+  background-color: mediumslateblue;
+}
+.entity-image img {
+  height: 40px;
+}
+.main-data {
+  padding-right: 40px;
+}
+.filter select {
+  border-radius: 5px;
+  width: 100%;
+  color: grey;
+}
+.margin-p-40 {
+  margin-top: 3%;
+}
+.top-search {
+  background-color: #003f64;
+}
+.top-breadcrumb {
+  margin-left: 25px;
+}
+.top-breadcrumb a {
+  color: #FF7A6C;
+}
+.sort {
+  color: #FF7A6C;
+  font-size: 14px;
+  font-weight: normal;
+}
+#sort {
+  background-color: #003E65;
+  border: 0px;
+  color: white;
 }
 /*
     Created on : 12/07/2017, 04:28:12 PM

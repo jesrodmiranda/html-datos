@@ -18,6 +18,7 @@
 @font-size-a4: 14px;
 @font-size-a5: 12px;
 @font-weight-m: 500;
+@font-weight-l: 200;
 @font-size-a1-mobile: 26px;
 @font-size-a2-mobile: 20px;
 @font-size-a3-mobile: 14px;
@@ -55,6 +56,9 @@ a {
 }
 .text-a5 {
     font-size: @font-size-a5;
+}
+.l {
+    font-weight: @font-weight-l;
 }
 .m {
     font-weight: @font-weight-m;
@@ -451,4 +455,106 @@ Test
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2);
+}
+
+.dataset-item {
+    margin-left: 64px;
+    margin-bottom: 30px;
+
+}
+.dataset-date {
+    display: inline-block;
+}
+.dataset-display {
+    display: inherit;
+}
+.line-blue-light {
+    height: 1px;
+    background-color: @color-blue-light;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.line-grey-light {
+    height: 1px;
+    background-color: darkgrey;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.dataset-link-blue-middle {
+    color: @color-blue-middle;
+}
+.icon-download-one, .icon-views, .dataset-categories{
+    font-size: 20px;
+
+}
+
+.downloads-count, .views-count {
+    margin-left: 10px;
+    font-size: @font-size-a4;
+    font-weight: @font-weight-l;
+    display: inline-block;
+    vertical-align: super;
+}
+.dataset-analytics {
+    position: relative;
+}
+
+.dataset-description {
+    height: 100px;
+    text-align: justify;
+}
+.format-type {
+    height: 20px;
+    width: 50px;
+    display: inline-block;
+    color: #FFF;
+    font-size: @font-size-a4;
+    margin-left: 5px;
+}
+.format-type.csv {
+    background-color: orange;
+}
+.format-type.xml {
+    background-color: olivedrab;
+}
+.format-type.json {
+    background-color: mediumslateblue;
+}
+
+.entity-image img{
+    height: 40px;
+}
+.main-data {
+    padding-right: 40px;
+}
+
+.filter select {
+    border-radius: 5px;
+    width: 100%;
+    color: grey;
+
+}
+.margin-p-40 {
+    margin-top: 3%;
+}
+.top-search {
+    background-color:  @color-blue-back;
+}
+.top-breadcrumb {
+    margin-left: 25px;
+}
+.top-breadcrumb a{
+    color: @color-orange;
+
+}
+.sort {
+    color: @color-orange;
+    font-size: @font-size-a4;
+    font-weight: normal;
+
+}
+#sort {
+    background-color: @color-blue-dark;
+    border: 0px;
+    color: white;
 }
