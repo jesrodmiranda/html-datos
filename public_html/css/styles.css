@@ -7674,6 +7674,54 @@ Media queries
     margin: 0 auto;
     text-align: center;
   }
+  .top-breadcrumb {
+    background-color: white;
+    z-index: 1;
+    margin: 0;
+    height: 30px;
+    padding-top: 5px;
+  }
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .dataset-analytics,
+  .dataset-categories,
+  .formats {
+    margin-top: 20px;
+  }
+  .dataset-item {
+    margin-left: 15px;
+  }
+  .entity {
+    margin-bottom: 20px;
+  }
+  .m-padding {
+    padding-left: 15px;
+  }
+  .m-padding-0 {
+    padding-left: 0;
+  }
+  .main-data > .line-blue-light {
+    margin-left: 10px;
+  }
+  .dataset-count {
+    height: 30px;
+  }
+  .m-text-filter {
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .float-left {
+    float: left;
+  }
+  .float-right {
+    float: right;
+  }
+  .top-search {
+    padding-top: 20px;
+  }
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (max-width: 992px) {
@@ -7750,6 +7798,9 @@ Media queries
   }
   .nav li a:active {
     background-color: transparent;
+  }
+  .navbar-collapse.collapse.visible-xs.large-hidden {
+    display: none !important;
   }
 }
 @media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {

@@ -10,6 +10,7 @@
     <link rel="author" href="humans.txt"/>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css">
     <!--<link rel="stylesheet" type="text/css" href="fonts/icons.css">-->
 
 
@@ -34,7 +35,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xs-1 col-xs-offset-1 col-sm-1">
+                    <div class="col-xs-1 col-sm-1">
                         <a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                            aria-expanded="false" aria-controls="navbar">
                             <object type="image/svg+xml" data="img/icono_menu.svg" class="icon-menu">
@@ -44,6 +45,21 @@
                     </div>
                 </div>
             </div>
+            <div id="navbar" class="navbar-collapse collapse visible-xs large-hidden">
+                <ul class="nav">
+                    <li><a href="#" id="datasets">Conjunto de datos</a></li>
+                    <li><a href="#" id="entities">Entidades</a></li>
+                    <li><a href="#" id="about-us">Acerda de</a></li>
+                    <li class="visible-xs visible-sm"><a href="#" class="login-to-entities">Inicio sesion para
+                        entidades</a></li>
+                </ul>
+            </div>
+
+            <div class="top-breadcrumb visible-xs col-md-12 col-xs-12">
+                <div class="">
+                    <a href="#">HOME</a><span>/</span><a href="#">CONJUNTOS DE DATOS</a>
+                </div>
+            </div>
             <div class="col-md-8 background-white">
                 <div class="row log-in">
                     <ul class="nav-login">
@@ -51,16 +67,19 @@
                     </ul>
                 </div>
                 <div class="row menu">
-                    <div class="col-md-5">
+                    <div class="col-xs-12 hidden-xs hidden-sm col-md-5">
 
-                        <div class="input-group top-search-container" >
-                            <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets" placeholder="Búsqueda de conjunto de datos">
+                        <div class="input-group top-search-container">
+                            <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets"
+                                   placeholder="Búsqueda de conjunto de datos">
                             <div class="input-group-btn">
-                                <button type="button" class="btn btn-default background-search" id="top-search-button" aria-label="Buscar" id="search-datasets"><span class="glyphicon glyphicon-search"></span></button>
+                                <button type="button" class="btn btn-default background-search" id="top-search-button"
+                                        aria-label="Buscar" id="search-datasets"><span
+                                        class="glyphicon glyphicon-search"></span></button>
                             </div>
                         </div>
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse">
+                    <div id="navbar" class="navbar-collapse collapse hidden-xs">
                         <ul class="nav">
                             <li><a href="#" id="datasets">Conjunto de datos</a></li>
                             <li><a href="#" id="entities">Entidades</a></li>
@@ -79,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="top-breadcrumb row">
+        <div class="top-breadcrumb row hidden-xs">
             <div class="col-md-12">
                 <a href="#">HOME</a><span>/</span><a href="#">CONJUNTOS DE DATOS</a>
             </div>
@@ -88,14 +107,42 @@
 </header>
 
 
-</div>
-
 <!-- search datasets -->
 <div class="container">
-    <div class="col-md-12 top-search">
+    <div class="col-md-12 col-xs-12 top-search">
         <div class="row">
-            <div class="col-md-2"><div class="dataset-count text-center text-a1 m white">0.000</div> <div class="text-center text-a3 m white">Conjuntos de datos</div></div>
-            <div class="col-md-7">
+            <div class="col-xs-12 visible-xs visible-sm">
+
+                <div class="input-group top-search-container">
+                    <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets"
+                           placeholder="Búsqueda de conjunto de datos">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default background-search" id="top-search-button"
+                                aria-label="Buscar" id="search-datasets"><span
+                                class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 visible-xs">
+                <div style="float:left;">
+                    <a class="navbar-toggle collapsed" data-toggle="modal" data-target="#myModal">
+                        <object type="image/svg+xml" data="img/icono_menu.svg" class="icon-menu">
+                            Su navegador no soporta SVG
+                        </object>
+                    </a>
+                </div>
+                <div class="blue-middle m-text-filter" >Filtrar resultados</div>
+                <div class="float-right">
+                    <div class="dataset-count text-center text-a1 m white">0.000</div>
+                    <div class="text-center text-a3 m white">Conjuntos de datos</div>
+                </div>
+            </div>
+            <div class="float-left">
+                <div class="col-md-2 hidden-xs">
+                <div class="dataset-count text-center text-a1 m white">0.000</div>
+                <div class="text-center text-a3 m white">Conjuntos de datos</div>
+            </div>
+            <div class="col-md-7 hidden-xs">
                 <div class="row">
                     <div class="filter-head col-md-12">
                         Filtrar por:
@@ -109,12 +156,15 @@
                         <div class="filter-drop">
                             <div class="box-arrow"></div>
                             <ul style="max-height: 250px;">
-                                <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span></li>
-                                <li><label><input type="checkbox" name="selectItemorganization" value="alhasan-systems-private-limited">
+                                <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                </li>
+                                <li><label><input type="checkbox" name="selectItemorganization"
+                                                  value="alhasan-systems-private-limited">
                                     Entidad 2 </label><span> 5</span></li>
                                 <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
                                     Entidad 3</label><span> 1</span></li>
-                                <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa"> Action Contre la
+                                <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                    Action Contre la
                                     Faim Entidad 4</label><span> 1</span></li>
                             </ul>
                             <button type="button" id="allstates" class="clearbox">clear All</button>
@@ -129,12 +179,15 @@
                         <div class="filter-drop">
                             <div class="box-arrow"></div>
                             <ul style="max-height: 250px;">
-                                <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span></li>
-                                <li><label><input type="checkbox" name="selectItemorganization" value="alhasan-systems-private-limited">
+                                <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                </li>
+                                <li><label><input type="checkbox" name="selectItemorganization"
+                                                  value="alhasan-systems-private-limited">
                                     Entidad 2 </label><span> 5</span></li>
                                 <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
                                     Entidad 3</label><span> 1</span></li>
-                                <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa"> Action Contre la
+                                <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                    Action Contre la
                                     Faim Entidad 4</label><span> 1</span></li>
                             </ul>
                             <button type="button" id="allstates" class="clearbox">clear All</button>
@@ -149,12 +202,15 @@
                         <div class="filter-drop">
                             <div class="box-arrow"></div>
                             <ul style="max-height: 250px;">
-                                <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span></li>
-                                <li><label><input type="checkbox" name="selectItemorganization" value="alhasan-systems-private-limited">
+                                <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                </li>
+                                <li><label><input type="checkbox" name="selectItemorganization"
+                                                  value="alhasan-systems-private-limited">
                                     Entidad 2 </label><span> 5</span></li>
                                 <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
                                     Entidad 3</label><span> 1</span></li>
-                                <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa"> Action Contre la
+                                <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                    Action Contre la
                                     Faim Entidad 4</label><span> 1</span></li>
                             </ul>
                             <button type="button" id="allstates" class="clearbox">clear All</button>
@@ -164,7 +220,7 @@
 
 
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 hidden-xs">
 
                 <div class="row">
                     <div class="col-md-12 sort-head">Ordenar por:</div>
@@ -178,12 +234,15 @@
                         <div class="filter-drop">
                             <div class="box-arrow"></div>
                             <ul style="max-height: 250px;">
-                                <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span></li>
-                                <li><label><input type="checkbox" name="selectItemorganization" value="alhasan-systems-private-limited">
+                                <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                </li>
+                                <li><label><input type="checkbox" name="selectItemorganization"
+                                                  value="alhasan-systems-private-limited">
                                     Entidad 2 </label><span> 5</span></li>
                                 <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
                                     Entidad 3</label><span> 1</span></li>
-                                <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa"> Action Contre la
+                                <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                    Action Contre la
                                     Faim Entidad 4</label><span> 1</span></li>
                             </ul>
                             <button type="button" id="allstates" class="clearbox">clear All</button>
@@ -191,13 +250,141 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Filtrar resultados</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="filter-head col-md-12">
+                            Filtrar por:
+                        </div>
+                        <div class="col-md-4 filter entity-filter margin-p-40">
+                            <button type="button" id="entities-filter" class="dropdown-button">
+                                <span class="placeholder">Entidades</span>
+                                <div class="icon-dropdown icon-dropdown-down"></div>
+                            </button>
+
+                            <div class="filter-drop">
+                                <div class="box-arrow"></div>
+                                <ul style="max-height: 250px;">
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                    </li>
+                                    <li><label><input type="checkbox" name="selectItemorganization"
+                                                      value="alhasan-systems-private-limited">
+                                        Entidad 2 </label><span> 5</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
+                                        Entidad 3</label><span> 1</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                        Action Contre la
+                                        Faim Entidad 4</label><span> 1</span></li>
+                                </ul>
+                                <button type="button" id="allstates" class="clearbox">clear All</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 filter entity-filter margin-p-40">
+                            <button type="button" id="category-filter" class="dropdown-button">
+                                <span class="placeholder">Categoria</span>
+                                <div class="icon-dropdown icon-dropdown-down"></div>
+                            </button>
+
+                            <div class="filter-drop">
+                                <div class="box-arrow"></div>
+                                <ul style="max-height: 250px;">
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                    </li>
+                                    <li><label><input type="checkbox" name="selectItemorganization"
+                                                      value="alhasan-systems-private-limited">
+                                        Entidad 2 </label><span> 5</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
+                                        Entidad 3</label><span> 1</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                        Action Contre la
+                                        Faim Entidad 4</label><span> 1</span></li>
+                                </ul>
+                                <button type="button" id="allstates" class="clearbox">clear All</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 filter entity-filter margin-p-40">
+                            <button type="button" id="format-filter" class="dropdown-button">
+                                <span class="placeholder">Formato</span>
+                                <div class="icon-dropdown icon-dropdown-down"></div>
+                            </button>
+
+                            <div class="filter-drop">
+                                <div class="box-arrow"></div>
+                                <ul style="max-height: 250px;">
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                    </li>
+                                    <li><label><input type="checkbox" name="selectItemorganization"
+                                                      value="alhasan-systems-private-limited">
+                                        Entidad 2 </label><span> 5</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
+                                        Entidad 3</label><span> 1</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                        Action Contre la
+                                        Faim Entidad 4</label><span> 1</span></li>
+                                </ul>
+                                <button type="button" id="allstates" class="clearbox">clear All</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-12 ">
+
+                    <div class="row">
+                        <div class="col-md-12 sort-head">Ordenar por:</div>
+
+                        <div class="col-md-12 filter sort-filter margin-p-40">
+                            <button type="button" id="sort-filter" class="dropdown-button">
+                                <span class="placeholder">Ultima modificación</span>
+                                <div class="icon-dropdown icon-dropdown-down"></div>
+                            </button>
+
+                            <div class="filter-drop">
+                                <div class="box-arrow"></div>
+                                <ul style="max-height: 250px;">
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                    </li>
+                                    <li><label><input type="checkbox" name="selectItemorganization"
+                                                      value="alhasan-systems-private-limited">
+                                        Entidad 2 </label><span> 5</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
+                                        Entidad 3</label><span> 1</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                        Action Contre la
+                                        Faim Entidad 4</label><span> 1</span></li>
+                                </ul>
+                                <button type="button" id="allstates" class="clearbox">clear All</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                 </div>
             </div>
-
-
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Listo</button>
+            </div>
         </div>
-    </div>
 
+    </div>
 </div>
 
 <div class="margin-bt-40"></div>
@@ -205,23 +392,27 @@
 <!-- Datasets list -->
 <div class="container">
     <div class="row dataset-item">
-        <div class="col-md-4 main-data">
-            <div class="text-a3 m blue-middle"><a href="#" class="dataset-link-blue-middle">Nombre del dataset</a></div>
-            <div class="dataset-date">
+        <div class="col-md-4  col-xs-12 main-data">
+            <div class="text-a3 m blue-middle m-padding"><a href="#" class="dataset-link-blue-middle">Nombre del
+                dataset</a></div>
+            <div class="dataset-date m-padding">
                 <div class="text-a3 l gray dataset-display">Ultima actualización:</div>
                 <div class="text-a3 l blue-dark dataset-display">15/06/2017</div>
             </div>
             <div class="line-blue-light"></div>
-            <div class="entity row">
-                <div class="entity-image col-md-2">
+            <div class="entity row m-padding">
+                <div class="entity-image col-md-2 col-xs-2">
 
-                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="">
+                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png"
+                         alt="">
 
                 </div>
-                <div class="text-a4 blue-middle col-md-9">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
+                <div class="text-a4 blue-middle col-md-9 col-xs-9">Unidad Administrativa Especial Cuerpo Oficial de
+                    Bomberos Bogotá
+                </div>
             </div>
         </div>
-        <div class="col-md-7 secondary-data">
+        <div class="col-md-7 col-xs-12 secondary-data">
             <div class="row">
                 <div class="dataset-description col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut autem dolorem
@@ -230,29 +421,30 @@
                 </div>
             </div>
             <div class="row">
-                <div class="dataset-analytics col-md-6">
+                <div class="dataset-analytics col-md-6 col-xs-12 m-padding-0">
                     <div class="row">
-                        <div class="col-md-6">
-                    <span class="icon-download-one "><span class="path1"><span class="path2"></span></span></span>
-                    <div class="downloads-count">500 Descargas</div>
+                        <div class="col-md-6 col-xs-6">
+                            <span class="icon-download-one "><span class="path1"><span
+                                    class="path2"></span></span></span>
+                            <div class="downloads-count">500 Descargas</div>
                         </div>
-                        <div class="col-md-6">
-                    <span class="icon-views"><span class="path1"><span class="path2"><span class="path3"></span></span></span></span>
-                    <div class="views-count">5000 Visitas</div>
+                        <div class="col-md-6 col-xs-6">
+                            <span class="icon-views"><span class="path1"><span class="path2"><span class="path3"></span></span></span></span>
+                            <div class="views-count">5000 Visitas</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 dataset-categories">
+                <div class="col-md-2 col-xs-12 dataset-categories m-padding-0">
                     <div class="row">
-                        <div class="col-md-3">
-                    <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
+                        <div class="col-md-3 col-xs-1">
+                            <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
-                        <div class="col-md-3">
-                    <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
+                        <div class="col-md-3 col-xs-1">
+                            <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12 formats">
                     <div class="format-type csv text-center">CSV</div>
                     <div class="format-type xml text-center">XML</div>
                     <div class="format-type json text-center">JSON</div>
@@ -263,23 +455,27 @@
     </div>
     <div class="line-grey-light"></div>
     <div class="row dataset-item">
-        <div class="col-md-4 main-data">
-            <div class="text-a3 m blue-middle"><a href="#" class="dataset-link-blue-middle">Nombre del dataset</a></div>
-            <div class="dataset-date">
+        <div class="col-md-4  col-xs-12 main-data">
+            <div class="text-a3 m blue-middle m-padding"><a href="#" class="dataset-link-blue-middle">Nombre del
+                dataset</a></div>
+            <div class="dataset-date m-padding">
                 <div class="text-a3 l gray dataset-display">Ultima actualización:</div>
                 <div class="text-a3 l blue-dark dataset-display">15/06/2017</div>
             </div>
             <div class="line-blue-light"></div>
-            <div class="entity row">
-                <div class="entity-image col-md-2">
+            <div class="entity row m-padding">
+                <div class="entity-image col-md-2 col-xs-2">
 
-                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="">
+                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png"
+                         alt="">
 
                 </div>
-                <div class="text-a4 blue-middle col-md-9">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
+                <div class="text-a4 blue-middle col-md-9 col-xs-9">Unidad Administrativa Especial Cuerpo Oficial de
+                    Bomberos Bogotá
+                </div>
             </div>
         </div>
-        <div class="col-md-7 secondary-data">
+        <div class="col-md-7 col-xs-12 secondary-data">
             <div class="row">
                 <div class="dataset-description col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut autem dolorem
@@ -288,29 +484,30 @@
                 </div>
             </div>
             <div class="row">
-                <div class="dataset-analytics col-md-6">
+                <div class="dataset-analytics col-md-6 col-xs-12 m-padding-0">
                     <div class="row">
-                        <div class="col-md-6">
-                            <span class="icon-download-one "><span class="path1"><span class="path2"></span></span></span>
+                        <div class="col-md-6 col-xs-6">
+                            <span class="icon-download-one "><span class="path1"><span
+                                    class="path2"></span></span></span>
                             <div class="downloads-count">500 Descargas</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-6">
                             <span class="icon-views"><span class="path1"><span class="path2"><span class="path3"></span></span></span></span>
                             <div class="views-count">5000 Visitas</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 dataset-categories">
+                <div class="col-md-2 col-xs-12 dataset-categories m-padding-0">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-1">
                             <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-1">
                             <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12 formats">
                     <div class="format-type csv text-center">CSV</div>
                     <div class="format-type xml text-center">XML</div>
                     <div class="format-type json text-center">JSON</div>
@@ -321,23 +518,27 @@
     </div>
     <div class="line-grey-light"></div>
     <div class="row dataset-item">
-        <div class="col-md-4 main-data">
-            <div class="text-a3 m blue-middle"><a href="#" class="dataset-link-blue-middle">Nombre del dataset</a></div>
-            <div class="dataset-date">
+        <div class="col-md-4  col-xs-12 main-data">
+            <div class="text-a3 m blue-middle m-padding"><a href="#" class="dataset-link-blue-middle">Nombre del
+                dataset</a></div>
+            <div class="dataset-date m-padding">
                 <div class="text-a3 l gray dataset-display">Ultima actualización:</div>
                 <div class="text-a3 l blue-dark dataset-display">15/06/2017</div>
             </div>
             <div class="line-blue-light"></div>
-            <div class="entity row">
-                <div class="entity-image col-md-2">
+            <div class="entity row m-padding">
+                <div class="entity-image col-md-2 col-xs-2">
 
-                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="">
+                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png"
+                         alt="">
 
                 </div>
-                <div class="text-a4 blue-middle col-md-9">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
+                <div class="text-a4 blue-middle col-md-9 col-xs-9">Unidad Administrativa Especial Cuerpo Oficial de
+                    Bomberos Bogotá
+                </div>
             </div>
         </div>
-        <div class="col-md-7 secondary-data">
+        <div class="col-md-7 col-xs-12 secondary-data">
             <div class="row">
                 <div class="dataset-description col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut autem dolorem
@@ -346,29 +547,30 @@
                 </div>
             </div>
             <div class="row">
-                <div class="dataset-analytics col-md-6">
+                <div class="dataset-analytics col-md-6 col-xs-12 m-padding-0">
                     <div class="row">
-                        <div class="col-md-6">
-                            <span class="icon-download-one "><span class="path1"><span class="path2"></span></span></span>
+                        <div class="col-md-6 col-xs-6">
+                            <span class="icon-download-one "><span class="path1"><span
+                                    class="path2"></span></span></span>
                             <div class="downloads-count">500 Descargas</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-6">
                             <span class="icon-views"><span class="path1"><span class="path2"><span class="path3"></span></span></span></span>
                             <div class="views-count">5000 Visitas</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 dataset-categories">
+                <div class="col-md-2 col-xs-12 dataset-categories m-padding-0">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-1">
                             <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-1">
                             <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12 formats">
                     <div class="format-type csv text-center">CSV</div>
                     <div class="format-type xml text-center">XML</div>
                     <div class="format-type json text-center">JSON</div>
@@ -379,23 +581,27 @@
     </div>
     <div class="line-grey-light"></div>
     <div class="row dataset-item">
-        <div class="col-md-4 main-data">
-            <div class="text-a3 m blue-middle"><a href="#" class="dataset-link-blue-middle">Nombre del dataset</a></div>
-            <div class="dataset-date">
+        <div class="col-md-4  col-xs-12 main-data">
+            <div class="text-a3 m blue-middle m-padding"><a href="#" class="dataset-link-blue-middle">Nombre del
+                dataset</a></div>
+            <div class="dataset-date m-padding">
                 <div class="text-a3 l gray dataset-display">Ultima actualización:</div>
                 <div class="text-a3 l blue-dark dataset-display">15/06/2017</div>
             </div>
             <div class="line-blue-light"></div>
-            <div class="entity row">
-                <div class="entity-image col-md-2">
+            <div class="entity row m-padding">
+                <div class="entity-image col-md-2 col-xs-2">
 
-                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="">
+                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png"
+                         alt="">
 
                 </div>
-                <div class="text-a4 blue-middle col-md-9">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
+                <div class="text-a4 blue-middle col-md-9 col-xs-9">Unidad Administrativa Especial Cuerpo Oficial de
+                    Bomberos Bogotá
+                </div>
             </div>
         </div>
-        <div class="col-md-7 secondary-data">
+        <div class="col-md-7 col-xs-12 secondary-data">
             <div class="row">
                 <div class="dataset-description col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut autem dolorem
@@ -404,29 +610,30 @@
                 </div>
             </div>
             <div class="row">
-                <div class="dataset-analytics col-md-6">
+                <div class="dataset-analytics col-md-6 col-xs-12 m-padding-0">
                     <div class="row">
-                        <div class="col-md-6">
-                            <span class="icon-download-one "><span class="path1"><span class="path2"></span></span></span>
+                        <div class="col-md-6 col-xs-6">
+                            <span class="icon-download-one "><span class="path1"><span
+                                    class="path2"></span></span></span>
                             <div class="downloads-count">500 Descargas</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-6">
                             <span class="icon-views"><span class="path1"><span class="path2"><span class="path3"></span></span></span></span>
                             <div class="views-count">5000 Visitas</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 dataset-categories">
+                <div class="col-md-2 col-xs-12 dataset-categories m-padding-0">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-1">
                             <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-1">
                             <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12 formats">
                     <div class="format-type csv text-center">CSV</div>
                     <div class="format-type xml text-center">XML</div>
                     <div class="format-type json text-center">JSON</div>
@@ -437,23 +644,27 @@
     </div>
     <div class="line-grey-light"></div>
     <div class="row dataset-item">
-        <div class="col-md-4 main-data">
-            <div class="text-a3 m blue-middle"><a href="#" class="dataset-link-blue-middle">Nombre del dataset</a></div>
-            <div class="dataset-date">
+        <div class="col-md-4  col-xs-12 main-data">
+            <div class="text-a3 m blue-middle m-padding"><a href="#" class="dataset-link-blue-middle">Nombre del
+                dataset</a></div>
+            <div class="dataset-date m-padding">
                 <div class="text-a3 l gray dataset-display">Ultima actualización:</div>
                 <div class="text-a3 l blue-dark dataset-display">15/06/2017</div>
             </div>
             <div class="line-blue-light"></div>
-            <div class="entity row">
-                <div class="entity-image col-md-2">
+            <div class="entity row m-padding">
+                <div class="entity-image col-md-2 col-xs-2">
 
-                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png" alt="">
+                    <img src="http://ckan.vivelabbogotadev.co/uploads/group/2016-02-11-154944.609581logobomberos.png"
+                         alt="">
 
                 </div>
-                <div class="text-a4 blue-middle col-md-9">Unidad Administrativa Especial Cuerpo Oficial de Bomberos Bogotá</div>
+                <div class="text-a4 blue-middle col-md-9 col-xs-9">Unidad Administrativa Especial Cuerpo Oficial de
+                    Bomberos Bogotá
+                </div>
             </div>
         </div>
-        <div class="col-md-7 secondary-data">
+        <div class="col-md-7 col-xs-12 secondary-data">
             <div class="row">
                 <div class="dataset-description col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut autem dolorem
@@ -462,29 +673,30 @@
                 </div>
             </div>
             <div class="row">
-                <div class="dataset-analytics col-md-6">
+                <div class="dataset-analytics col-md-6 col-xs-12 m-padding-0">
                     <div class="row">
-                        <div class="col-md-6">
-                            <span class="icon-download-one "><span class="path1"><span class="path2"></span></span></span>
+                        <div class="col-md-6 col-xs-6">
+                            <span class="icon-download-one "><span class="path1"><span
+                                    class="path2"></span></span></span>
                             <div class="downloads-count">500 Descargas</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-6">
                             <span class="icon-views"><span class="path1"><span class="path2"><span class="path3"></span></span></span></span>
                             <div class="views-count">5000 Visitas</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 dataset-categories">
+                <div class="col-md-2 col-xs-12 dataset-categories m-padding-0">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-1">
                             <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-1">
                             <span class="icon-whatsapp"><span class="path1"><span class="path2"></span></span></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12 formats">
                     <div class="format-type csv text-center">CSV</div>
                     <div class="format-type xml text-center">XML</div>
                     <div class="format-type json text-center">JSON</div>
@@ -521,25 +733,23 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script>
-    $(document).ready(function()
-    {
-        $(".dropdown-button").click(function(){
+    $(document).ready(function () {
+        $(".dropdown-button").click(function () {
 
             dropdownWindow = $(this).parent().find(".filter-drop");
-            $(".filter-drop").not( dropdownWindow ).hide();
+            $(".filter-drop").not(dropdownWindow).hide();
             dropdownWindow.slideToggle('fast');
             boxArrow = dropdownWindow.find(".icon-dropdown");
-            if(boxArrow.hasClass('icon-dropdown-up')){
+            if (boxArrow.hasClass('icon-dropdown-up')) {
                 boxArrow.removeClass("icon-dropdown-up");
                 boxArrow.addClass("icon-dropdown-down");
-            }else{
+            } else {
                 boxArrow.removeClass("icon-dropdown-down");
                 boxArrow.addClass("icon-dropdown-up");
             }
 
         });
-        $(".clearbox").click(function()
-        {
+        $(".clearbox").click(function () {
             $(this).parents(".filter-drop")
                 .first()
                 .find("input[type=checkbox]")
@@ -566,5 +776,6 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
 </script>
+
 </body>
 </html>
