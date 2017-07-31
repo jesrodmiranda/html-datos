@@ -490,6 +490,7 @@ Test
 
 .downloads-count, .views-count {
     margin-left: 10px;
+  margin-right: 10px;
     font-size: @font-size-a4;
     font-weight: @font-weight-l;
     display: inline-block;
@@ -510,6 +511,7 @@ Test
     color: #FFF;
     font-size: @font-size-a4;
     margin-left: 5px;
+    margin-top: 5px;
 }
 .format-type.csv {
     background-color: orange;
@@ -565,8 +567,9 @@ Test
 #top-search-button span {
     vertical-align: top;
 }
-.top-search-container {
+.top-search-container,top-search-container-ipad {
     margin-top: 3px;
+  z-index: 4;
 }
 .filter-head {
     color: @color-blue-light;
@@ -644,4 +647,10 @@ Test
 .dropdown-button > .icon-dropdown {
     float: right;
     margin-top: 4px;
+}
+.top-search-container-ipad {
+  display:none;
+}
+.counts, .views {
+  display: inline-block;
 }

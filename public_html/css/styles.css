@@ -7356,6 +7356,7 @@ Test
 .downloads-count,
 .views-count {
   margin-left: 10px;
+  margin-right: 10px;
   font-size: 14px;
   font-weight: 200;
   display: inline-block;
@@ -7375,6 +7376,7 @@ Test
   color: #FFF;
   font-size: 14px;
   margin-left: 5px;
+  margin-top: 5px;
 }
 .format-type.csv {
   background-color: orange;
@@ -7425,8 +7427,10 @@ Test
 #top-search-button span {
   vertical-align: top;
 }
-.top-search-container {
+.top-search-container,
+top-search-container-ipad {
   margin-top: 3px;
+  z-index: 4;
 }
 .filter-head {
   color: #8de1ff;
@@ -7495,6 +7499,13 @@ Test
 .dropdown-button > .icon-dropdown {
   float: right;
   margin-top: 4px;
+}
+.top-search-container-ipad {
+  display: none;
+}
+.counts,
+.views {
+  display: inline-block;
 }
 /*
     Created on : 12/07/2017, 04:28:12 PM
@@ -7814,12 +7825,29 @@ Media queries
     margin-left: 100px;
     margin-bottom: 20px;
   }
+  .top-search-container {
+    display: none;
+  }
+  .top-search-container-ipad {
+    display: table;
+    margin-top: 10px;
+  }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (orientation: portrait) {
   /* Styles */
   .dataset-updated {
     margin-left: 100px;
     margin-bottom: 20px;
+  }
+  .top-search-container {
+    display: none;
+  }
+  .top-search-container-ipad {
+    display: table;
+    margin-top: 10px;
+  }
+  .dataset-analytics {
+    width: 35%;
   }
 }
 /* Large screens ----------- */

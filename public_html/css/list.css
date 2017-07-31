@@ -6,3 +6,6 @@
     z-index: 3;
     width: 100%;
 }
+#navbar.navbar-collapse.visible-xs {
+    z-index: 5;
+}
