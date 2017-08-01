@@ -7507,6 +7507,32 @@ top-search-container-ipad {
 .views {
   display: inline-block;
 }
+.mobile-filter,
+.mobile-filter > .modal-dialog,
+.mobile-filter > .modal-dialog > .modal-content {
+  height: 100%;
+}
+.mobile-filter > .modal-dialog {
+  margin: 0;
+}
+.mobile-filter > .modal-dialog > .modal-content {
+  border-radius: 0;
+  background-color: #E6E6E6;
+}
+.mobile-filter > .modal-dialog > .modal-content > .modal-footer > button {
+  background-color: #FF7A6C;
+  color: #FFF;
+}
+.mobile-filter > .modal-dialog > .modal-content > .modal-header {
+  padding: 0;
+}
+.mobile-filter > .modal-dialog > .modal-content > .modal-header > button {
+  color: #FF7A6C;
+  font-size: 20px;
+  opacity: 1;
+  padding-right: 10px;
+  padding-top: 10px;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */

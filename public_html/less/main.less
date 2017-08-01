@@ -654,3 +654,30 @@ Test
 .counts, .views {
   display: inline-block;
 }
+
+.mobile-filter,.mobile-filter > .modal-dialog, .mobile-filter > .modal-dialog> .modal-content {
+    height: 100%;
+
+}
+.mobile-filter > .modal-dialog {
+    margin: 0;
+}
+.mobile-filter > .modal-dialog> .modal-content {
+    border-radius: 0;
+    background-color: #E6E6E6;
+}
+.mobile-filter > .modal-dialog> .modal-content > .modal-footer > button{
+    background-color: @color-orange;
+    color: #FFF;
+}
+.mobile-filter > .modal-dialog> .modal-content > .modal-header {
+    padding: 0;
+}
+.mobile-filter > .modal-dialog> .modal-content > .modal-header > button{
+
+    color: @color-orange;
+    font-size: 20px;
+    opacity: 1;
+    padding-right: 10px;
+    padding-top: 10px;
+}
