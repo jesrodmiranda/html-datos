@@ -7107,8 +7107,7 @@ Top Menu
 /*.toggle-menu {
     display: none;
 }*/
-ul,
-ol {
+ul {
   list-style: none;
 }
 /*
