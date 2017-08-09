@@ -7841,6 +7841,10 @@ Media queries
   .dataset-name-column {
     padding-left: 80px;
   }
+  .dataset-date-margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 @media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
   .logo object {
