@@ -7538,9 +7538,6 @@ top-search-container-ipad {
   padding-right: 10px;
   padding-top: 10px;
 }
-.dataset-name-column {
-  padding-left: 80px;
-}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
@@ -7840,6 +7837,9 @@ Media queries
   }
   .navbar-collapse.collapse.visible-xs.large-hidden {
     display: none !important;
+  }
+  .dataset-name-column {
+    padding-left: 80px;
   }
 }
 @media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
