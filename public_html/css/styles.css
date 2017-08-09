@@ -7412,7 +7412,9 @@ Test
   background-color: #003f64;
 }
 .top-breadcrumb {
-  margin-left: 25px;
+  margin-left: 0px;
+  padding-left: 25px;
+  background-color: #e6e6e6;
 }
 .top-breadcrumb a {
   color: #ff7a6c;
@@ -7539,6 +7541,15 @@ top-search-container-ipad {
   opacity: 1;
   padding-right: 10px;
   padding-top: 10px;
+}
+.additional-info-title {
+  color: #003F64;
+}
+.dataset-name-aditional-info {
+  color: #27AAE1;
+}
+.aditional-info {
+  display: inline-block;
 }
 /*
     Created on : 12/07/2017, 04:28:12 PM
@@ -7839,6 +7850,13 @@ Media queries
   }
   .navbar-collapse.collapse.visible-xs.large-hidden {
     display: none !important;
+  }
+  .dataset-name-column {
+    padding-left: 80px;
+  }
+  .dataset-date-margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
