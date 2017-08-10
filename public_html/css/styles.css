@@ -7048,6 +7048,9 @@ a.svg:after {
 .left-text {
   text-align: left;
 }
+.row-special {
+  margin-right: 0;
+}
 /*
 Header
 */
@@ -7434,7 +7437,7 @@ Dataset detail
   color: #FFF;
 }
 .entity-image img {
-  height: 40px;
+  width: 51px;
 }
 .main-data {
   padding-right: 40px;
