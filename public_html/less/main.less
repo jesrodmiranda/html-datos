@@ -72,6 +72,13 @@ a {
 .blue  {
     color: @color-blue;
 }
+
+.background-blue  {
+    background-color: @color-blue;
+    border-color:  @color-blue;
+    color: #fff;
+}
+
 .blue-dark  {
     color: @color-blue-dark;
 }
@@ -531,6 +538,38 @@ Dataset detail
 
 .border-less td, .border-less th {
     border: none;
+}
+
+.format-type-detail {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    color: #FFF;
+    font-size: @font-size-a4;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.format-type-detail.csv {
+    background-color: orange;
+}
+.format-type-detail.xml {
+    background-color: olivedrab;
+}
+.format-type-detail.json {
+    background-color: mediumslateblue;
+}
+
+.format-type a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.center-icon-type {
+    padding-top: 10px;
+}
+
+.pull-down-button {
+    margin-top: 40px;
 }
 
 
