@@ -122,7 +122,7 @@ object{
     pointer-events: none;
 }
 a.svg:after {
-    content: ""; 
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -135,7 +135,7 @@ a.svg:after {
     padding-bottom: 7px;
     padding-left: 25px;
     padding-right: 25px;
-    font-size: @font-size-a4;    
+    font-size: @font-size-a4;
     -webkit-box-shadow: 0px 3px 10px 3px rgba(50,50,50,0.24);
     -moz-box-shadow: 0px 3px 10px 3px rgba(50,50,50,0.24);
     box-shadow: 0px 3px 10px 3px rgba(50,50,50,0.24);
@@ -372,15 +372,15 @@ Dataset list
     width: 10%;
     padding: 5% 0;
 }
-.name-category {   
+.name-category {
     height: 50px;
     width: 80%;
-    float: right; 
+    float: right;
     padding-left: 5px;
     display: table;
 }
 .name-category a {
-    color: white;    
+    color: white;
     display: table-cell;
     vertical-align: middle;
 }
@@ -472,6 +472,31 @@ Test
 .dataset-display {
     display: inherit;
 }
+
+/**
+Dataset detail
+ */
+
+.dataset-category-item {
+    display: inline-flex;
+    margin-left: 12px;
+}
+
+.dataset-category-item img {
+    height: 30px;
+    width: 30px;
+}
+
+.v-center {
+   vertical-align: super;
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
 .line-blue-light {
     height: 1px;
     background-color: @color-blue-light;
@@ -508,28 +533,11 @@ Test
     height: 100px;
     text-align: justify;
 }
-.format-type {
-    height: 20px;
-    width: 50px;
-    display: inline-block;
-    color: #FFF;
-    font-size: @font-size-a4;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-.format-type.csv {
-    background-color: orange;
-}
-.format-type.xml {
-    background-color: olivedrab;
-}
-.format-type.json {
-    background-color: mediumslateblue;
-}
+d
 
 .format-type a {
     text-decoration: none;
-    color: #FFF;    
+    color: #FFF;
 }
 
 .entity-image img{
