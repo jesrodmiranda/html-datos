@@ -7806,12 +7806,16 @@ Pagination
 }
 .entity-detail-description-text {
   color: #003E65;
+  text-align: justify;
 }
 .entity-description-margin-bottom-20 {
   margin-bottom: 20px;
 }
 .entity-detail-web {
   color: #00CACF;
+}
+#entity-detail-social-media-section {
+  margin-bottom: 10px;
 }
 /*
     Created on : 12/07/2017, 04:28:12 PM
