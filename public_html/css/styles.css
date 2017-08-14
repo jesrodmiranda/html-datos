@@ -6965,6 +6965,9 @@ a {
   border-color: #00CACF;
   color: #fff;
 }
+.background-gray-ligth2 {
+  background-color: #F2F2F2;
+}
 .blue-dark {
   color: #003E65;
 }
@@ -7766,6 +7769,9 @@ Pagination
 .pagination-mini ul > li > span {
   padding: 0 6px;
   font-size: 10.5px;
+}
+.resource-detail {
+  padding: 30px 64px 20px 64px;
 }
 /*
     Created on : 12/07/2017, 04:28:12 PM
