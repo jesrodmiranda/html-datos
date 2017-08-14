@@ -7817,6 +7817,12 @@ Pagination
 #entity-detail-social-media-section {
   margin-bottom: 10px;
 }
+.no-padding {
+  padding: 0;
+}
+.icon-size {
+  width: 32px;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
