@@ -7121,6 +7121,11 @@ Header
 .menu {
   height: 30px;
 }
+.select-order {
+  width: 220px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
 /*
 Top Menu
 */
@@ -7846,7 +7851,7 @@ Pagination
     height: auto;
     margin: 0px;
     justify-content: center;
-    border-bottom: solid #00CACF 1px;
+    border-bottom: solid #00cacf 1px;
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
