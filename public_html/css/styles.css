@@ -7836,6 +7836,9 @@ Pagination
 .search-dataset-mobile-container {
   height: 70px;
   background-color: #003f64;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .no-padding {
   padding: 0;
