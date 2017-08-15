@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Datos Abiertos Bogotá</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="author" href="humans.txt"/>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+    <!--<link rel="stylesheet" type="text/css" href="fonts/icons.css">-->
+
+
+</head>
+<body id="entities-list-body">
+<!--[if lt IE 9]>
+<p class="browserupgrade">Está usando un navegador <strong>muy viejo</strong>. Por favor visita <a
+        href="http://browsehappy.com/"> este sitio</a> para actualizar el navegador y disfrutar de una mejor experiencia
+    para este sitio web.</p>
+<![endif]-->
+
+<!-- header -->
+<header class="background-gray">
+    <div class="container">
+        <div class="top-bar row">
+            <div class="col-md-3 col-xs-12 col-sm-12 background-blue-dark">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-10">
+                        <div class="logo">
+                            <a href="index.html" class="svg">
+                                <object type="image/svg+xml" data="img/logo.svg">Su navegador no soporta SVG</object>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 col-sm-1">
+                        <a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                           aria-expanded="false" aria-controls="navbar">
+                            <object type="image/svg+xml" data="img/icono_menu.svg" class="icon-menu">
+                                Su navegador no soporta SVG
+                            </object>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse visible-xs large-hidden">
+                <ul class="nav">
+                    <li><a href="#" id="datasets">Conjunto de datos</a></li>
+                    <li><a href="#" id="entities">Entidades</a></li>
+                    <li><a href="#" id="about-us">Acerda de</a></li>
+                    <li class="visible-xs visible-sm"><a href="#" class="login-to-entities">Inicio sesion para
+                        entidades</a></li>
+                </ul>
+            </div>
+
+            <div class="top-breadcrumb visible-xs col-md-12 col-xs-12">
+                <div class="">
+                    <a href="#">HOME</a><span>/</span><a href="#">ENTIDADES</a>
+                </div>
+            </div>
+            <div class="col-md-8 background-white">
+                <div class="row log-in">
+                    <div class="col-md-12">
+                    <ul class="nav-login">
+                        <li><a href="#" class="login-to-entities">Inicio sesion para entidades</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="row menu">
+                    <div class="col-xs-12 hidden-xs hidden-sm col-md-5">
+
+                        <div class="input-group top-search-container">
+                            <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets"
+                                   placeholder="Búsqueda de conjunto de datos">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default background-search" id="top-search-button"
+                                        aria-label="Buscar" id="search-datasets"><span
+                                        class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse hidden-xs">
+                        <ul class="nav">
+                            <li><a href="#" id="datasets">Conjunto de datos</a></li>
+                            <li><a href="#" id="entities">Entidades</a></li>
+                            <li><a href="#" id="about-us">Acerda de</a></li>
+                            <li class="visible-xs visible-sm"><a href="#" class="login-to-entities">Inicio sesion para
+                                entidades</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 background-white">
+                <div class="logo-bogota-top">
+                    <object type="image/svg+xml" data="img/logo_bogota_mejor_para_todos.svg">
+                        Su navegador no soporta SVG
+                    </object>
+                </div>
+            </div>
+        </div>
+        <div class="top-breadcrumb row hidden-xs">
+            <div class="col-md-12">
+                <a href="#">HOME</a><span>/</span><a href="#">ENTIDADES</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- search datasets -->
+<div class="container">
+    <div class="col-md-12 col-xs-12 top-search">
+        <div class="row">
+
+            <div class="col-xs-12 visible-xs visible-sm">
+
+                <div class="input-group top-search-container">
+                    <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets"
+                           placeholder="Búsqueda de conjunto de datos">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default background-search" id="top-search-button"
+                                aria-label="Buscar" id="search-datasets"><span
+                                class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 visible-xs visible-sm">
+                <div style="float:left;">
+                    <a class="navbar-toggle collapsed" data-toggle="modal" data-target="#myModal">
+                        <object type="image/svg+xml" data="img/icono_menu.svg" class="icon-menu">
+                            Su navegador no soporta SVG
+                        </object>
+                    </a>
+                </div>
+                <div class="blue-middle m-text-filter" >Filtrar resultados</div>
+                <div class="float-right">
+                    <div class="dataset-count text-center text-a1 m white">52</div>
+                    <div class="text-center text-a3 m white">Entidades</div>
+                </div>
+            </div>
+            <div class="float-left hidden-sm">
+                <div class="col-md-2 hidden-xs">
+                <div class="dataset-count text-center text-a1 m white">52</div>
+                <div class="text-center text-a3 m white">Entidades</div>
+            </div>
+            <div class="col-md-10 hidden-xs">
+                <div class="row">
+                    <div class="col-md-11">
+                        <div class="input-group top-search-container-ipad">
+
+                            <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets" placeholder="Búsqueda de conjunto de datos">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default background-search" id="top-search-button" aria-label="Buscar"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row col-md-4">
+                        <div class="col-md-12 sort-head">Ordenar por:</div>
+
+                        <div class="col-md-12 filter sort-filter margin-p-40">
+                            <button type="button" id="sort-filter" class="dropdown-button">
+                                <span class="placeholder">Nombre</span>
+                                <div class="icon-dropdown icon-dropdown-down"></div>
+                            </button>
+
+                            <div class="filter-drop">
+                                <button type="button" id="allstates" class="clearbox">Borrar selección</button>
+                                <ul style="max-height: 250px;">
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                    </li>
+                                    <li><label><input type="checkbox" name="selectItemorganization"
+                                                      value="alhasan-systems-private-limited">
+                                        Entidad 2 </label><span> 5</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
+                                        Entidad 3</label><span> 1</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                        Action Contre la
+                                        Faim Entidad 4</label><span> 1</span></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+</div>
+<div id="myModal" class="modal fade mobile-filter" role="dialog ">
+    <div class="modal-dialog ">
+
+        <!-- Modal content-->
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times</button>
+                <!--<h4 class="modal-title">Filtrar resultados</h4>-->
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row col-md-4">
+                        <div class="col-md-12 sort-head">Ordenar por:</div>
+
+                        <div class="col-md-12 filter sort-filter margin-p-40">
+                            <button type="button" id="sort-filter" class="dropdown-button">
+                                <span class="placeholder">Ultima modificación</span>
+                                <div class="icon-dropdown icon-dropdown-down"></div>
+                            </button>
+
+                            <div class="filter-drop">
+                                <button type="button" id="allstates" class="clearbox">Borrar selección</button>
+                                <ul style="max-height: 250px;">
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                    </li>
+                                    <li><label><input type="checkbox" name="selectItemorganization"
+                                                      value="alhasan-systems-private-limited">
+                                        Entidad 2 </label><span> 5</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
+                                        Entidad 3</label><span> 1</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                        Action Contre la
+                                        Faim Entidad 4</label><span> 1</span></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-md-8">
+                        <div class="filter-head col-md-12">
+                            Filtrar por:
+                        </div>
+                        <div class="col-md-4 filter entity-filter margin-p-40">
+
+                            <button type="button" id="entities-filter" class="dropdown-button">
+                                <span class="placeholder">Entidades</span>
+                                <div class="icon-dropdown icon-dropdown-down"></div>
+                            </button>
+
+                            <div class="filter-drop">
+                                <div class="input-group" style="padding: 0 10px 0 10px; margin-bottom: 10px;">
+                                    <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets" placeholder="Búsqueda de conjunto de datos">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default background-search" id="top-search-button" aria-label="Buscar"><span class="glyphicon glyphicon-search"></span></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="allstates" class="clearbox">Borrar selección</button>
+                                <ul style="max-height: 250px;">
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                    </li>
+                                    <li><label><input type="checkbox" name="selectItemorganization"
+                                                      value="alhasan-systems-private-limited">
+                                        Entidad 2 </label><span> 5</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
+                                        Entidad 3</label><span> 1</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                        Action Contre la
+                                        Faim Entidad 4</label><span> 1</span></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 filter entity-filter margin-p-40">
+                            <button type="button" id="category-filter" class="dropdown-button">
+                                <span class="placeholder">Categoria</span>
+                                <div class="icon-dropdown icon-dropdown-down"></div>
+                            </button>
+
+                            <div class="filter-drop">
+                                <div class="input-group" style="padding: 0 10px 0 10px; margin-bottom: 10px;">
+                                    <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets" placeholder="Búsqueda de conjunto de datos">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default background-search" id="top-search-button" aria-label="Buscar"><span class="glyphicon glyphicon-search"></span></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="allstates" class="clearbox">Borrar selección</button>
+                                <ul style="max-height: 250px;">
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                    </li>
+                                    <li><label><input type="checkbox" name="selectItemorganization"
+                                                      value="alhasan-systems-private-limited">
+                                        Entidad 2 </label><span> 5</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
+                                        Entidad 3</label><span> 1</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                        Action Contre la
+                                        Faim Entidad 4</label><span> 1</span></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 filter entity-filter margin-p-40">
+                            <button type="button" id="format-filter" class="dropdown-button">
+                                <span class="placeholder">Formato</span>
+                                <div class="icon-dropdown icon-dropdown-down"></div>
+                            </button>
+
+                            <div class="filter-drop">
+                                <div class="input-group" style="padding: 0 10px 0 10px; margin-bottom: 10px;">
+                                    <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets" placeholder="Búsqueda de conjunto de datos">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default background-search" id="top-search-button" aria-label="Buscar"><span class="glyphicon glyphicon-search"></span></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="allstates" class="clearbox">Borrar selección</button>
+                                <ul style="max-height: 250px;">
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acled"> Entidad 1</label><span>28</span>
+                                    </li>
+                                    <li><label><input type="checkbox" name="selectItemorganization"
+                                                      value="alhasan-systems-private-limited">
+                                        Entidad 2 </label><span> 5</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="asareca-resakss">
+                                        Entidad 3</label><span> 1</span></li>
+                                    <li><label><input type="checkbox" name="selectItemorganization" value="acf-west-africa">
+                                        Action Contre la
+                                        Faim Entidad 4</label><span> 1</span></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Listo</button>-->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Datasets list -->
+<div class="container entitiesListContainer">
+
+      <div class="entityList entityList-1">
+
+          <div class="entityListImage">
+                <img src="img/logo_bogota_mejor_para_todos.svg">
+          </div>
+
+          <div class="entityListTitle text-a4 blue-middle">
+                <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+          </div>
+
+          <div class="entityListLine">
+          </div>
+
+          <div class="entityListFooter">
+
+                <div class="counterFooter">
+
+                  <div class="counts v-center">
+                  <span class="icon-download-one "><span class="path1"><span
+                          class="path2"></span></span></span>
+                      <div class="downloads-count">999 Conjuntos de Datos</div>
+                  </div>
+
+                </div>
+
+                <div class="buttonFooter">
+
+                        <button type="button" class="btn btn-default background-search">
+                            <p>Ver Más</p>
+                        </button>
+
+                </div>
+
+          </div>
+
+      </div>
+
+      <div class="entityList entityList-2">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-3">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-4">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-5">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-6">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-7">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-8">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-9">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-10">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-11">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+      <div class="entityList entityList-12">
+
+        <div class="entityListImage">
+              <img src="img/logo_bogota_mejor_para_todos.svg">
+        </div>
+
+        <div class="entityListTitle text-a4 blue-middle">
+              <p>Unidad Administrativa Especial de Rehabilitación y Mantenimiento Vial</p>
+        </div>
+
+        <div class="entityListLine">
+        </div>
+
+        <div class="entityListFooter">
+
+              <div class="counterFooter">
+
+                <div class="counts v-center">
+                <span class="icon-download-one "><span class="path1"><span
+                        class="path2"></span></span></span>
+                    <div class="downloads-count">999 Conjuntos de Datos</div>
+                </div>
+
+              </div>
+
+              <div class="buttonFooter">
+
+                      <button type="button" class="btn btn-default background-search">
+                          <p>Ver Más</p>
+                      </button>
+
+              </div>
+
+        </div>
+
+      </div>
+
+</div>
+
+<div class="margin-bt-40"></div>
+
+<footer>
+    <div class="container">
+        <div class="col-md-3 white">
+
+            <ul class="nav-footer">
+                <li><a href="">Acerca de Datos Abiertos</a></li>
+                <li><a href="http://docs.ckan.org/en/ckan-2.6.2/api/">API CKAN</a></li>
+                <li><a href="http://www.ckan.org/">CKAN Association</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-6 col-sm-4">&nbsp;</div>
+        <div class="col-md-3 center-block center"><img src="img/logo_secretaria.svg" alt=""/></div>
+    </div>
+</footer>
+
+
+<script src="js/vendor/modernizr.js"></script>
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".dropdown-button").click(function () {
+
+            dropdownWindow = $(this).parent().find(".filter-drop");
+            $(".filter-drop").not(dropdownWindow).hide();
+            dropdownWindow.slideToggle('fast');
+            boxArrow = dropdownWindow.find(".icon-dropdown");
+            if (boxArrow.hasClass('icon-dropdown-up')) {
+                boxArrow.removeClass("icon-dropdown-up");
+                boxArrow.addClass("icon-dropdown-down");
+            } else {
+                boxArrow.removeClass("icon-dropdown-down");
+                boxArrow.addClass("icon-dropdown-up");
+            }
+
+        });
+        $(".clearbox").click(function () {
+            $(this).parents(".filter-drop")
+                .first()
+                .find("input[type=checkbox]")
+                .prop("checked", false);
+
+            $(this).parents(".filter-drop")
+        });
+    });
+</script>
+<!-- Google Analytics -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments);
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r);
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>
