@@ -7823,6 +7823,12 @@ Pagination
 .icon-size {
   width: 32px;
 }
+.margin-lft-0 {
+  margin-left: 0;
+}
+.preview-filters {
+  padding: 5px 64px 20px 64px;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
