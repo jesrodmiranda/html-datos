@@ -7833,6 +7833,10 @@ Pagination
     width: 940px;
   }
 }
+.search-dataset-mobile-container {
+  height: 70px;
+  background-color: #003f64;
+}
 .no-padding {
   padding: 0;
 }
