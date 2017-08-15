@@ -7638,6 +7638,7 @@ top-search-container-ipad {
 .aditional-info {
   font-size: 20px;
   display: inline-block;
+  word-break: break-all;
 }
 /*
 Pagination
@@ -7831,6 +7832,14 @@ Pagination
 @media (min-width: 992px) {
   .container-entity-detail-breadcrumb {
     width: 940px;
+  }
+}
+@media (max-width: 991px) {
+  .detail-entity-info-container {
+    flex-direction: column;
+  }
+  .margin-detail-entity-picture {
+    flex-direction: row;
   }
 }
 .search-dataset-mobile-container {
