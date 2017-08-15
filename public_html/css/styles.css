@@ -7834,6 +7834,27 @@ Pagination
     width: 940px;
   }
 }
+@media (max-width: 991px) {
+  .detail-entity-info-container {
+    flex-direction: column;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+  .margin-detail-entity-picture {
+    flex-direction: row;
+    width: 100% !important;
+    height: auto;
+    margin: 0px;
+    justify-content: center;
+    border-bottom: solid #00CACF 1px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .img-entity {
+    width: 51px;
+    height: 51px;
+  }
+}
 .search-dataset-mobile-container {
   height: 70px;
   background-color: #003f64;
