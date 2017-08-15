@@ -7817,6 +7817,22 @@ Pagination
 #entity-detail-social-media-section {
   margin-bottom: 10px;
 }
+.container-entity-detail-breadcrumb {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .container-entity-detail-breadcrumb {
+    width: 1250px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container-entity-detail-breadcrumb {
+    width: 940px;
+  }
+}
 .no-padding {
   padding: 0;
 }
