@@ -7395,6 +7395,9 @@ Dataset detail
 .dataset-item-file {
   margin-bottom: 30px;
 }
+.padding-mobile {
+  padding: 10px !important;
+}
 .border-less td,
 .border-less th {
   border: none;
@@ -8108,6 +8111,27 @@ Media queries
   }
   .dataset-date-margin {
     padding-left: 0;
+  }
+  .dataset-category-item {
+    display: inline-flex;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .dataset-category-item img {
+    height: 20px;
+    width: 20px;
+  }
+  .bigger {
+    font-size: 20px;
+  }
+  .additional-info-title {
+    color: #777777;
+  }
+  .dataset-name-aditional-info {
+    color: #777777;
+  }
+  .aditional-info {
+    color: #eeeeee;
   }
 }
 /* iPads (portrait and landscape) ----------- */
