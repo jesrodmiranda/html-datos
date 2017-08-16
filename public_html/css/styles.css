@@ -7884,6 +7884,21 @@ Pagination
 .resource-preview {
   padding: 5px 64px 20px 64px;
 }
+.js-hide {
+  display: none;
+}
+.js-hide.active {
+  display: block;
+}
+.ckanext-datapreview > iframe {
+  min-height: 650px;
+}
+.ckanext-datapreview {
+  position: relative;
+  clear: both;
+  padding-top: 15px;
+  margin-top: 0;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
@@ -8202,6 +8217,9 @@ Media queries
     margin-right: 1.3em;
     font-size: 21px;
     position: relative;
+  }
+  .nav-tabs-plain > li > a:before {
+    content: "";
   }
   .nav li a:after {
     content: '';
