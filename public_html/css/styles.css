@@ -7880,7 +7880,8 @@ Pagination
 .margin-lft-0 {
   margin-left: 0;
 }
-.preview-filters {
+.preview-filters,
+.resource-preview {
   padding: 5px 64px 20px 64px;
 }
 /*
@@ -8319,4 +8320,3 @@ Media queries
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */
 }
-/*# sourceMappingURL=styles.css.map */
