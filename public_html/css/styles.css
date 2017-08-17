@@ -8288,12 +8288,12 @@ Media queries
   }
   .entityListImage {
     margin: 3% 0% 0% 0%;
-    width: 20%;
+    width: 25%;
     min-height: inherit;
     max-height: inherit;
   }
   .entityListImage img {
-    width: auto;
+    max-width: 80%;
   }
   .entityListTitle {
     padding: 0% 0%;
