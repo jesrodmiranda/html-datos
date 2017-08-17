@@ -7904,6 +7904,8 @@ Pagination
   margin: 10% 8% 5%;
   padding: 0% 0%;
   border: #ccc 1px solid;
+  min-height: 254px;
+  max-height: 254px;
 }
 .entityListImage img {
   margin: 20% 7%;
@@ -7912,6 +7914,7 @@ Pagination
 .entityListTitle {
   padding: 0% 7%;
   text-align: left;
+  min-height: 60px;
 }
 .entityListLine {
   height: 1px;
@@ -8285,7 +8288,12 @@ Media queries
   }
   .entityListImage {
     margin: 3% 0% 0% 0%;
-    width: 20%;
+    width: 25%;
+    min-height: inherit;
+    max-height: inherit;
+  }
+  .entityListImage img {
+    max-width: 80%;
   }
   .entityListTitle {
     padding: 0% 0%;
