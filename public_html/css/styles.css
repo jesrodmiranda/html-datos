@@ -6767,8 +6767,8 @@ Fonts
 }
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?de5681');
-  src: url('../fonts/icomoon.eot?de5681#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?de5681') format('truetype'), url('../fonts/icomoon.woff?de5681') format('woff'), url('../fonts/icomoon.svg?de5681#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?9k8uwb');
+  src: url('../fonts/icomoon.eot?9k8uwb#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?9k8uwb') format('truetype'), url('../fonts/icomoon.woff?9k8uwb') format('woff'), url('../fonts/icomoon.svg?9k8uwb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -6786,135 +6786,228 @@ Fonts
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+[class^="bicon-"],
+[class*=" bicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .icon-search:before {
   content: "\e900";
   color: #f7f7f7;
 }
-.icon-download-one .path1:before {
+.icon-datasets .path1:before {
   content: "\e901";
   color: #00cacf;
 }
-.icon-download-one .path2:before {
+.icon-datasets .path2:before {
   content: "\e902";
   margin-left: -1em;
   color: #ffffff;
 }
-.icon-email .path1:before {
+.icon-datasets .path3:before {
   content: "\e903";
+  margin-left: -1em;
+  color: #ffffff;
+}
+.icon-datasets .path4:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: #ffffff;
+}
+.icon-datasets .path5:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: #ffffff;
+}
+.icon-datasets .path6:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: #ffffff;
+}
+.icon-datasets .path7:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: #ffffff;
+}
+.icon-datasets .path8:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: #ffffff;
+}
+.icon-download-one .path1:before {
+  content: "\e909";
+  color: #00cacf;
+}
+.icon-download-one .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: #ffffff;
+}
+.icon-api:before {
+  content: "\e90b";
+  color: #f2f2f2;
+}
+.icon-share:before {
+  content: "\e90c";
+  color: #f2f2f2;
+}
+.icon-email .path1:before {
+  content: "\e90d";
   color: #003f64;
 }
 .icon-email .path2:before {
-  content: "\e904";
+  content: "\e90e";
   margin-left: -0.99902344em;
   color: #ffffff;
 }
 .icon-email .path3:before {
-  content: "\e905";
+  content: "\e90f";
   margin-left: -0.99902344em;
   color: #ffffff;
 }
 .icon-email .path4:before {
-  content: "\e906";
+  content: "\e910";
   margin-left: -0.99902344em;
   color: #ffffff;
 }
 .icon-email .path5:before {
-  content: "\e907";
+  content: "\e911";
   margin-left: -0.99902344em;
   color: #ffffff;
 }
 .icon-download-two:before {
-  content: "\e908";
+  content: "\e912";
   color: #f7f7f7;
 }
 .icon-dropdown-down:before {
-  content: "\e909";
+  content: "\e913";
   color: #00cacf;
 }
 .icon-dropdown-up:before {
-  content: "\e90a";
+  content: "\e914";
   color: #00cacf;
 }
 .icon-facebook .path1:before {
-  content: "\e90b";
+  content: "\e915";
   color: #0071bc;
 }
 .icon-facebook .path2:before {
-  content: "\e90c";
+  content: "\e916";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-googleplus .path1:before {
-  content: "\e90d";
+  content: "\e917";
   color: #f56973;
 }
 .icon-googleplus .path2:before {
-  content: "\e90e";
+  content: "\e918";
   margin-left: -1em;
   color: #fefefe;
 }
 .icon-googleplus .path3:before {
-  content: "\e90f";
+  content: "\e919";
   margin-left: -1em;
   color: #fefefe;
 }
 .icon-menu:before {
-  content: "\e910";
+  content: "\e91a";
   color: #ff7a6c;
 }
-.icon-stats:before {
-  content: "\e911";
+.icon-prueba:before {
+  content: "\e91b";
   color: #000;
 }
 .icon-twitter .path1:before {
-  content: "\e912";
+  content: "\e91c";
   color: #27aae1;
 }
 .icon-twitter .path2:before {
-  content: "\e913";
+  content: "\e91d";
   margin-left: -1em;
   color: #f0f1f1;
 }
 .icon-whatsapp .path1:before {
-  content: "\e914";
+  content: "\e91e";
   color: #41a75d;
 }
 .icon-whatsapp .path2:before {
-  content: "\e915";
+  content: "\e91f";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-back:before {
-  content: "\e916";
+  content: "\e920";
   color: #00cacf;
 }
 .icon-next:before {
-  content: "\e917";
+  content: "\e921";
   color: #00cacf;
 }
 .icon-views .path1:before {
-  content: "\e918";
+  content: "\e922";
   color: #00cacf;
 }
 .icon-views .path2:before {
-  content: "\e919";
+  content: "\e923";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-views .path3:before {
-  content: "\e91a";
+  content: "\e924";
   margin-left: -1em;
   color: #ffffff;
 }
 a.icon-row-direction.collapsed:before {
-  content: "\e909";
+  content: "\e913";
   color: #00cacf;
   font-size: 20px;
 }
 a.icon-row-direction:before {
-  content: "\e90a";
+  content: "\e914";
   color: #00cacf;
   font-size: 20px;
+}
+.bicon-facebook .path1:before {
+  content: "\e915";
+  color: #0071bc;
+}
+.bicon-facebook .path2:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: #ffffff;
+}
+.bicon-googleplus .path1:before {
+  content: "\e917";
+  color: #f56973;
+}
+.bicon-googleplus .path2:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: #fefefe;
+}
+.bicon-googleplus .path3:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: #fefefe;
+}
+.bicon-twitter .path1:before {
+  content: "\e91c";
+  color: #27aae1;
+}
+.bicon-twitter .path2:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: #f0f1f1;
 }
 /*
 General
@@ -7402,7 +7495,7 @@ Dataset detail
   margin-bottom: 30px;
 }
 .padding-mobile {
-  padding: 10px !important;
+  padding: 15px !important;
 }
 .border-less td,
 .border-less th {
@@ -7997,6 +8090,15 @@ Pagination
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+div.tooltip-inner {
+  text-align: center;
+  background-color: #26AAE1;
+  color: white;
+  font-size: 14px;
+  min-width: 175px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /*
     Created on : 12/07/2017, 04:28:12 PM
