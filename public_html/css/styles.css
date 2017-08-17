@@ -8104,6 +8104,11 @@ div.tooltip-inner {
   padding-left: 10px;
   padding-right: 10px;
 }
+/* Admin button*/
+.module-content {
+  margin-left: 64px;
+  margin-bottom: 30px;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
