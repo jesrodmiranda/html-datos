@@ -1031,8 +1031,9 @@ padding: 5px 64px 20px 64px;
 .js-hide.active {
     display: block;
 }
-.ckanext-datapreview>iframe {
+.ckanext-datapreview > iframe {
     min-height: 650px;
+    margin-top: 50px;
 }
 
 .ckanext-datapreview {
@@ -1135,4 +1136,35 @@ padding: 5px 64px 20px 64px;
 .entityListFooter .counterFooter .downloads-count{
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.select2-container .select2-choice {
+    display: block;
+    height: 26px;
+    padding: 0 0 0 8px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #aaa;
+    white-space: nowrap;
+    line-height: 26px;
+    color: #444;
+    text-decoration: none;
+    border-radius: 4px;
+    background-clip: padding-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.5, #fff));
+    background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 50%);
+    background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee', GradientType = 0);
+    background-image: linear-gradient(to top, #eee 0%, #fff 50%);
+}
+.resource-view-filters .resource-view-filter-values .select2-container {
+    margin-right: 0.3em;
+    margin-bottom: 0.2em;
+    width: 24%!important;
 }
