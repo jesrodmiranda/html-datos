@@ -7246,6 +7246,9 @@ Search box
 .background-search a {
   color: #fff;
 }
+.background-search a:hover {
+  color: #333;
+}
 .text-category {
   display: none;
 }
