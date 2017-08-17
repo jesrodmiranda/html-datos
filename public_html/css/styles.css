@@ -7987,6 +7987,11 @@ Pagination
   margin-bottom: 0.2em;
   width: 24%!important;
 }
+.organization-list-pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
