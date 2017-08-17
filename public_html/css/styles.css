@@ -8289,6 +8289,11 @@ Media queries
   .entityListImage {
     margin: 3% 0% 0% 0%;
     width: 20%;
+    min-height: inherit;
+    max-height: inherit;
+  }
+  .entityListImage img {
+    width: auto;
   }
   .entityListTitle {
     padding: 0% 0%;
