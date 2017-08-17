@@ -6786,6 +6786,20 @@ Fonts
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+[class^="bicon-"],
+[class*=" bicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .icon-search:before {
   content: "\e900";
   color: #f7f7f7;
@@ -6915,6 +6929,38 @@ a.icon-row-direction:before {
   content: "\e90a";
   color: #00cacf;
   font-size: 20px;
+}
+.bicon-facebook .path1:before {
+  content: "\e90b";
+  color: #0071bc;
+}
+.bicon-facebook .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: #ffffff;
+}
+.bicon-googleplus .path1:before {
+  content: "\e90d";
+  color: #f56973;
+}
+.bicon-googleplus .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: #fefefe;
+}
+.bicon-googleplus .path3:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: #fefefe;
+}
+.bicon-twitter .path1:before {
+  content: "\e912";
+  color: #27aae1;
+}
+.bicon-twitter .path2:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: #f0f1f1;
 }
 /*
 General
@@ -7402,7 +7448,7 @@ Dataset detail
   margin-bottom: 30px;
 }
 .padding-mobile {
-  padding: 10px !important;
+  padding: 15px !important;
 }
 .border-less td,
 .border-less th {
@@ -7997,6 +8043,15 @@ Pagination
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+div.tooltip-inner {
+  text-align: center;
+  background-color: #26AAE1;
+  color: white;
+  font-size: 14px;
+  min-width: 175px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /*
     Created on : 12/07/2017, 04:28:12 PM
