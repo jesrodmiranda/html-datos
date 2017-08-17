@@ -7243,6 +7243,12 @@ Search box
   border-color: #FF7A6C;
   color: #fff;
 }
+.background-search a {
+  color: #fff;
+}
+.background-search a:hover {
+  color: #333;
+}
 .text-category {
   display: none;
 }
@@ -7986,6 +7992,11 @@ Pagination
   margin-right: 0.3em;
   margin-bottom: 0.2em;
   width: 24%!important;
+}
+.organization-list-pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 /*
     Created on : 12/07/2017, 04:28:12 PM
