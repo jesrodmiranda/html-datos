@@ -8100,6 +8100,10 @@ div.tooltip-inner {
   padding-left: 10px;
   padding-right: 10px;
 }
+.footer-logo {
+  width: 90%;
+  margin-top: 15px;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
@@ -8349,6 +8353,13 @@ Media queries
   }
   .aditional-info {
     color: #eeeeee;
+  }
+  .pull-down-button {
+    margin-top: 5px;
+  }
+  .footer-logo {
+    width: 55%;
+    margin-top: 15px;
   }
 }
 /* iPads (portrait and landscape) ----------- */
