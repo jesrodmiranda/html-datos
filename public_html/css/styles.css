@@ -7608,6 +7608,7 @@ Dataset detail
   margin-left: 0px;
   padding-left: 25px;
   background-color: #E6E6E6;
+  text-transform: uppercase;
 }
 .top-breadcrumb a {
   color: #FF7A6C;
@@ -8056,6 +8057,9 @@ Pagination
   margin-left: 5px;
   margin-right: 5px;
 }
+.entityListFooter span.icon-datasets {
+  font-size: 20px;
+}
 .select2-container .select2-choice {
   display: block;
   height: 26px;
@@ -8103,6 +8107,11 @@ div.tooltip-inner {
 .footer-logo {
   width: 90%;
   margin-top: 15px;
+}
+/* Admin button*/
+.module-content {
+  margin-left: 64px;
+  margin-bottom: 30px;
 }
 /*
     Created on : 12/07/2017, 04:28:12 PM
@@ -8360,6 +8369,9 @@ Media queries
   .footer-logo {
     width: 55%;
     margin-top: 15px;
+  }
+  .dataset-description {
+    height: auto;
   }
 }
 /* iPads (portrait and landscape) ----------- */
