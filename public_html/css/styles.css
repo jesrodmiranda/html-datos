@@ -8097,6 +8097,11 @@ Pagination
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: white;
+}
+.gray-background-container {
+  width: 100%;
+  background-color: #F2F2F2;
 }
 div.tooltip-inner {
   text-align: center;
