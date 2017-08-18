@@ -7984,7 +7984,7 @@ Pagination
   margin-right: 0px;
 }
 .entitiesListContainer {
-  width: 1250px;
+  width: 100%;
   padding-left: 0px;
   padding-right: 0px;
   background-color: white;
