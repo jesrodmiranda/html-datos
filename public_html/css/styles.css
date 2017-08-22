@@ -7061,6 +7061,9 @@ a {
 .background-gray-ligth2 {
   background-color: #F2F2F2;
 }
+.background-blue-middle {
+  background-color: #27AAE1;
+}
 .blue-dark {
   color: #003E65;
 }
@@ -8121,6 +8124,9 @@ div.tooltip-inner {
   margin-left: 64px;
   margin-bottom: 30px;
 }
+.no-hover a:hover {
+  text-decoration: none;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
@@ -8369,7 +8375,7 @@ Media queries
     color: #777777;
   }
   .aditional-info {
-    color: #eeeeee;
+    color: #b3b3b3;
   }
   .pull-down-button {
     margin-top: 5px;
