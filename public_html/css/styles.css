@@ -7636,7 +7636,7 @@ Dataset detail
 .top-search-container,
 top-search-container-ipad {
   margin-top: 3px;
-  z-index: 4;
+  z-index: 0;
 }
 .filter-head {
   color: #8de1ff;
