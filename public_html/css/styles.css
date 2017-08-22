@@ -7061,6 +7061,9 @@ a {
 .background-gray-ligth2 {
   background-color: #f2f2f2;
 }
+.background-blue-middle {
+  background-color: #27aae1;
+}
 .blue-dark {
   color: #003e65;
 }
@@ -8373,7 +8376,7 @@ Media queries
     color: #777777;
   }
   .aditional-info {
-    color: #eeeeee;
+    color: #b3b3b3;
   }
   .pull-down-button {
     margin-top: 5px;
