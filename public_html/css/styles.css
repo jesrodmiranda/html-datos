@@ -8001,6 +8001,8 @@ Pagination
   margin: 2% 1.5%;
   width: 20.5%;
   background-color: #E6E6E6;
+  height: 450px;
+  cursor: pointer;
 }
 .entityListImage {
   background-color: white;
@@ -8034,7 +8036,7 @@ Pagination
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  margin: 1.5% 2%;
+  margin: 1.5% 1%;
 }
 .counterFooter {
   display: flex;
