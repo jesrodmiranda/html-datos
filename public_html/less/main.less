@@ -543,7 +543,7 @@ Dataset detail
 }
 
 .dataset-name-column-detail {
-    padding-left: 64px;
+    padding-left: 25px;
 }
 
 .dataset-detail-content {
@@ -1230,5 +1230,42 @@ div.tooltip-inner {
 /* Search button */
 .top-search-container .glyphicon {
     top: -4px!important;
+
+}
+
+/*****************************/
+/* Changes from  August 24th */
+/*****************************/
+
+.viewMoreButtonContainerDesktop{
+  justify-content: flex-end;
+  height: 50px;
+  align-items: flex-end;
+  margin-right: 5%;
+}
+
+@media (max-width: 991px){
+  .viewMoreButtonContainerDesktop{
+    display: none;
+  }
+
+  .viewMoreButtonContainerMobile{
+    display: flex;
+  }
+
+  .entityList{
+    height: auto;
+  }
+
+}
+
+@media (min-width: 992px){
+  .viewMoreButtonContainerMobile{
+    display: none;
+  }
+
+  .viewMoreButtonContainerDesktop{
+    display: flex;
+  }
 
 }
