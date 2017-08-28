@@ -8224,6 +8224,11 @@ h2 {
 .password-input-login label {
   display: none;
 }
+.ckan-login-fomr-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
