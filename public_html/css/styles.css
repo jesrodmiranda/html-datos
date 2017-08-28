@@ -7543,7 +7543,6 @@ Dataset detail
   height: 1px;
   background-color: #cccccc;
   margin-top: 8px;
-  /*margin-bottom: 12px;*/
 }
 .dataset-link-blue-middle {
   color: #27AAE1;
@@ -8808,3 +8807,4 @@ Media queries
     width: 1170px;
   }
 }
+/*# sourceMappingURL=styles.css.map */
