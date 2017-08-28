@@ -8172,6 +8172,9 @@ div.tooltip-inner {
 h2 {
   color: #27AAE1;
 }
+.about-page-breadcrumb a:nth-child(2) {
+  font-weight: bold;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
