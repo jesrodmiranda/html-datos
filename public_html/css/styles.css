@@ -8178,6 +8178,46 @@ div.tooltip-inner {
 h2 {
   color: #27AAE1;
 }
+.login-form-container {
+  width: 512px;
+  height: 296px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-name-input-login {
+  margin-top: 30px;
+  height: 40px;
+  width: 448px;
+  display: flex;
+}
+.password-input-login {
+  margin-top: 25px;
+}
+.remember-user-login {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+}
+.remember-user-login-text {
+  color: #1E5576;
+}
+.make-login-button {
+  background-color: #00CACF;
+  color: white;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  margin-top: 30px;
+}
+.forgot-password-login-link {
+  margin-top: 20px;
+  color: #FC988D;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
