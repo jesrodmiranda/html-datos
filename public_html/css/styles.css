@@ -7457,6 +7457,7 @@ Test
 .dataset-item {
   margin-left: 64px;
   margin-bottom: 30px;
+  margin-top: 12px;
 }
 .dataset-date {
   /* display: inline-block;*/
@@ -7542,7 +7543,6 @@ Dataset detail
   height: 1px;
   background-color: #cccccc;
   margin-top: 8px;
-  margin-bottom: 12px;
 }
 .dataset-link-blue-middle {
   color: #27AAE1;
@@ -8784,3 +8784,4 @@ Media queries
     width: 1170px;
   }
 }
+/*# sourceMappingURL=styles.css.map */
