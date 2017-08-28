@@ -7457,6 +7457,7 @@ Test
 .dataset-item {
   margin-left: 64px;
   margin-bottom: 30px;
+  margin-top: 12px;
 }
 .dataset-date {
   /* display: inline-block;*/
@@ -7542,7 +7543,7 @@ Dataset detail
   height: 1px;
   background-color: #cccccc;
   margin-top: 8px;
-  margin-bottom: 12px;
+  /*margin-bottom: 12px;*/
 }
 .dataset-link-blue-middle {
   color: #27AAE1;
@@ -8225,6 +8226,23 @@ h2 {
   display: none;
 }
 .ckan-login-fomr-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.user-name-input-login div input {
+  height: 40px;
+  width: 448px;
+}
+.password-input-login div input {
+  height: 40px;
+  width: 448px;
+}
+#field-remember {
+  position: inherit !important;
+  margin: 0px 0px 0px 0px !important;
+}
+.make-login-button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
