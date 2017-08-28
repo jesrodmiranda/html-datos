@@ -8124,6 +8124,13 @@ div.tooltip-inner {
   margin-left: 64px;
   margin-bottom: 30px;
 }
+/* Fix dataset-detail*/
+.fix-margin {
+  width: 100% !important;
+}
+.fix-padding-detail {
+  padding-right: 37px;
+}
 /* Search button */
 .top-search-container .glyphicon {
   top: -4px !important;
@@ -8396,6 +8403,9 @@ Media queries
   }
   .bigger {
     font-size: 20px;
+  }
+  .fix-padding-detail {
+    padding-right: 0px;
   }
   .pull-down-button {
     margin-top: 5px;
