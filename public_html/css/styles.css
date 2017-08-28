@@ -8725,7 +8725,7 @@ Media queries
     padding-bottom: 10px;
   }
   .img-entity {
-    width: 51px;
+    width: auto;
     height: 51px;
   }
 }
