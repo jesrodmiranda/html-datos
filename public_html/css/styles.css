@@ -8157,7 +8157,9 @@ div.tooltip-inner {
     width: 300px !important;
   }
   .user-name-input-login,
-  .user-name-input-login div input .password-input-login div input {
+  .user-name-input-login div input .password-input-login div input,
+  .password-input-login div input,
+  .user-name-input-login div input {
     width: 280px !important;
   }
 }
