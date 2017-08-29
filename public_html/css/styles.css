@@ -8298,7 +8298,8 @@ h2 {
   border-radius: 5px;
   padding-left: 15px;
 }
-.about-info-container a {
+.about-info-container a,
+.additional-info-title a {
   text-decoration: underline;
 }
 /*
