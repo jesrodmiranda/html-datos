@@ -8298,6 +8298,9 @@ h2 {
   border-radius: 5px;
   padding-left: 15px;
 }
+.about-info-container a {
+  text-decoration: underline;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
