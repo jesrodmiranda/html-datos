@@ -8187,6 +8187,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 .user-name-input-login {
   margin-top: 30px;
