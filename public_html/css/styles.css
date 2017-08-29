@@ -8154,11 +8154,11 @@ div.tooltip-inner {
     height: auto;
   }
   .login-form-container {
-    width: 300px;
+    width: 300px !important;
   }
   .user-name-input-login,
   .user-name-input-login div input .password-input-login div input {
-    width: 280px;
+    width: 280px !important;
   }
 }
 @media (min-width: 992px) {
