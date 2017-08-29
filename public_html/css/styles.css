@@ -8271,6 +8271,26 @@ h2 {
   justify-content: center;
   margin-top: 10px;
 }
+.restore-password-form-container {
+  width: 512px;
+  height: 215px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.restore-password-button-margin {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.restore-password-text {
+  color: #3C6C87;
+  margin: 0px;
+}
 /*
     Created on : 12/07/2017, 04:28:12 PM
 */
