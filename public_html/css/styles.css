@@ -7486,6 +7486,9 @@ Dataset detail
   padding: 0 !important;
   margin: 0 !important;
 }
+.no-padding-right {
+  padding-right: 0px;
+}
 .no-table-border {
   border-top-width: 0 !important;
 }
@@ -8548,6 +8551,10 @@ Media queries
   }
   .fix-padding-detail {
     padding-right: 0px;
+  }
+  .no-padding-right {
+    padding-right: 10%;
+    padding-left: 10%;
   }
   .pull-down-button {
     margin-top: 5px;
