@@ -8196,7 +8196,7 @@ h2 {
 }
 .login-form-container {
   width: 512px;
-  height: 296px;
+  height: auto;
   padding-left: 32px;
   padding-right: 32px;
   background-color: #F2F2F2;
