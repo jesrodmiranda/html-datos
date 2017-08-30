@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<html lang="es"> <!--<![endif]-->
+<head
+>
+    <meta charset="utf-8"/>
+
+    <meta name="generator" content="ckan 2.6.2"/>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Abiertos </title>
+
+    <link rel="shortcut icon" href="/images/icons/ckan.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+
+
+
+
+
+
+</head>
+
+<body
+        data-site-root="http://datosbogota.vivelabbogotadev.co/" data-locale-root="http://datosbogota.vivelabbogotadev.co/" >
+
+<!--[if lt IE 9]>
+<p class="browserupgrade">Está usando un navegador <strong>muy antiguo</strong>. Por favor visita <a
+        href="http://browsehappy.com/"> este sitio</a> para actualizar el navegador y disfrutar de una mejor experiencia
+    para este sitio web.</p>
+<![endif]-->
+
+<!-- Update 09-08-2017 11:20  -->
+
+
+
+<!-- header -->
+<header class="background-white">
+    <!-- container -->
+    <!--admin-bar-->
+
+    <div class="container">
+
+        <!-- top-bar -->
+
+        <div class="top-bar row">
+            <div class="col-md-3 col-xs-12 col-sm-12 background-blue-dark">
+                <div class="row">
+
+                    <div class="col-xs-10 col-sm-10">
+                        <div class="logo">
+                            <a href="/" class="svg">
+                                <object type="image/svg+xml" data="/img/logo.svg">Su navegador no soporta SVG</object>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-2  col-sm-1">
+                        <a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                           aria-expanded="false" aria-controls="navbar" style="cursor: pointer">
+                            <object type="image/svg+xml" data="/img/icono_menu.svg" class="icon-menu">
+                                Su navegador no soporta SVG
+                            </object>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-8 background-white">
+
+
+                <div class="row log-in">
+                    <ul class="nav-login">
+
+
+
+                        <li><a class="login-to-entities" href="/user/login">Inicio de sesión para entidades</a>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+
+                <div class="row menu">
+
+                    <div class="col-xs-12 hidden-xs hidden-sm col-md-4">
+
+                        <form id="sf" class="search-form" method="get"
+                              action="/dataset">
+                            <div class="input-group top-search-container">
+                                <input class="form-control" id="top-search-box" aria-label="Búsqueda de Datasets"
+                                       placeholder="Búsqueda de conjunto de datos" name="q">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default background-search"
+                                            id="top-search-button"
+                                            aria-label="Buscar" id="search-datasets"
+                                            onclick="document.getElementById('sf').submit();"><span
+                                            class="glyphicon glyphicon-search"></span></button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav">
+
+                            <li><a href="/dataset" id="datasets">Conjunto de datos</a></li>
+                            <li><a href="/organization" id="entities">Entidades</a></li>
+                            <li><a class="current-page-breadcrumb" href="/about" id="about-us">Acerca de</a></li>
+                            <li class="hidden-xs visible-sm"><a href="#" class="login-to-entities">Inicio sesion para
+                                entidades</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-1 background-white">
+                <div class="logo-bogota-top">
+                    <object type="image/svg+xml" data="/img/logo_bogota_mejor_para_todos.svg">
+                        Su navegador no soporta SVG
+                    </object>
+                </div>
+            </div>
+        </div>
+        <!-- end top-bar -->
+
+    </div>
+
+
+    <!-- end container -->
+</header>
+
+
+
+
+
+
+
+<div class="container">
+    <div class="top-breadcrumb row row-special hidden-xs">
+        <div class="">
+            <a href="/">HOME</a><span class="breadcum-slash">/</span><a href="/dataset">Conjunto
+            de datos</a><span class="breadcum-slash">/</span><a href="#" class="current-page-breadcrumb">Espacio Verde por Habitante</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="background-gris" style="background-color: #F2F2F2">
+    <div class="container">
+        <div class="background-white">
+
+
+            <div class="container">
+
+                <div class="row">
+
+
+
+
+                </div>
+                <div class="container fix-margin fix-padding-detail" style="margin-top: 30px;">
+                    <div class="col-md-7  col-xs-12 col-sm-7 dataset-name-column-detail">
+                        <div class="text-a3 m blue-middle m-padding"><a href="#" class="dataset-link-blue-middle">Espacio Verde por Habitante</a>
+                        </div>
+                        <div class="margin-bt-20"></div>
+
+                        <p class="hidden-xs text-a4">
+                            Este indicador permite medir la cantidad de espacio público verde orientado a satisfacer las necesidades de recreación, permanencia al aire libre y de encuentro, constituido además por las áreas para la conservación y preservación de los sistemas orográficos e hídricos, los parques y las zonas verdes.
+                        </p>
+
+                        <div class="row">
+                            <div class="col-md-12 dataset-date-margin">
+                                <div class="dataset-date m-padding">
+                                    <div class="text-a3 l gray dataset-display">Última actualización:</div>
+                                    <div class="text-a3 l blue-dark dataset-display">
+<span class="automatic-local-datetime" data-datetime="2016-03-22T08:09:50-0500">
+    22/03/2016
+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="margin-bt-20 visible-xs"></div>
+                        <div class="line-blue-light visible-xs"></div>
+
+
+                        <div class="row hidden-xs">
+                            <div class="dataset-analytics col-xs-12 m-padding-0">
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 col-sm-12">
+                                        <div class="counts v-center">
+                                            <span class="icon-download-one "><span class="path1"><span
+                                                    class="path2"></span></span></span>
+                                            <div class="downloads-count">3  Descargas
+                                            </div>
+                                        </div>
+                                        <div class="views v-center">
+                                            <span class="icon-views"><span class="path1"><span class="path2"><span
+                                                    class="path3"></span></span></span></span>
+                                            <div class="views-count">14  Visitas
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="dataset-category-item">
+
+                                            <a href="/dataset?groups=agricultura-y-desarrollo-rural" data-toggle="tooltip" title="Agricultura y Desarrollo Rural"
+                                               class="hidden-xs">
+                                                <img src="http://datosbogota.vivelabbogotadev.co/uploads/group/2017-08-09-003627.491083agricultura.png"
+                                                     alt="Agricultura y Desarrollo Rural"
+                                                     width="32px">
+                                            </a>
+                                            <a href="/dataset?groups=agricultura-y-desarrollo-rural" class="visible-xs">
+                                                <img src="http://datosbogota.vivelabbogotadev.co/uploads/group/2017-08-09-003627.491083agricultura.png"
+                                                     alt="Agricultura y Desarrollo Rural"
+                                                     width="32px">
+                                            </a>
+                                        </div>
+
+
+                                        <div class="dataset-category-item">
+
+                                            <a href="/dataset?groups=ordenamiento-territorial" data-toggle="tooltip" title="Ordenamiento Territorial"
+                                               class="hidden-xs">
+                                                <img src="http://datosbogota.vivelabbogotadev.co/uploads/group/2017-08-09-005947.374969ordenamiento.png"
+                                                     alt="Ordenamiento Territorial"
+                                                     width="32px">
+                                            </a>
+                                            <a href="/dataset?groups=ordenamiento-territorial" class="visible-xs">
+                                                <img src="http://datosbogota.vivelabbogotadev.co/uploads/group/2017-08-09-005947.374969ordenamiento.png"
+                                                     alt="Ordenamiento Territorial"
+                                                     width="32px">
+                                            </a>
+                                        </div>
+
+
+                                        <div class="dataset-category-item">
+
+                                            <a href="/dataset?groups=vivienda-ciudad-y-territorio" data-toggle="tooltip" title="Vivienda, Ciudad y Territorio"
+                                               class="hidden-xs">
+                                                <img src="http://datosbogota.vivelabbogotadev.co/uploads/group/2017-08-09-164704.711233vivienda.png"
+                                                     alt="Vivienda, Ciudad y Territorio"
+                                                     width="32px">
+                                            </a>
+                                            <a href="/dataset?groups=vivienda-ciudad-y-territorio" class="visible-xs">
+                                                <img src="http://datosbogota.vivelabbogotadev.co/uploads/group/2017-08-09-164704.711233vivienda.png"
+                                                     alt="Vivienda, Ciudad y Territorio"
+                                                     width="32px">
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-1 col-sm-1"></div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="row hidden-xs">
+
+                            <img src="/uploads/group/2016-02-11-151934.051322logodadep-.png" alt="dadep"
+                                 width="160px" height="160px" class="img-responsive block-right"/>
+
+                        </div>
+
+                        <!--Solo movil-->
+                        <div class="visible-xs">
+                            <div class="row hidden-md">
+                                <div class="col-xs-2">
+
+                                    <img src="/uploads/group/2016-02-11-151934.051322logodadep-.png"
+                                         alt="dadep" width="50px" height="50px"
+                                         style="min-width: 50px;" class="img-responsive block-left"/>
+
+                                </div>
+                                <div class="col-xs-10">
+                                    <div class="text-a3 m blue-middle m-padding">
+                                        <a href="#" class="dataset-link-blue-middle">Departamento Administrativo de la Defensoría del Espacio Público</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin-bt-20 visible-xs"></div>
+
+                            <div class="row hidden-md">
+                                <div class="col-xs-12">
+                                    <p class="text-a3 gray">
+                                        Este indicador permite medir la cantidad de espacio público verde orientado a satisfacer las necesidades de recreación, permanencia al aire libre y de encuentro, constituido además por las áreas para la conservación y preservación de los sistemas orográficos e hídricos, los parques y las zonas verdes.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="dataset-analytics col-xs-12 m-padding-0">
+                                    <div class="row">
+                                        <div class="col-md-12 col-xs-12 col-sm-12">
+                                            <div class="counts v-center">
+                                                <span class="icon-download-one "><span class="path1"><span
+                                                        class="path2"></span></span></span>
+                                                <div class="downloads-count">219 Descargas</div>
+                                            </div>
+                                            <div class="views v-center">
+                                                <span class="icon-views"><span class="path1"><span class="path2"><span
+                                                        class="path3"></span></span></span></span>
+                                                <div class="views-count">192 Visitas</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <!--END movil-->
+
+                        <div class="margin-bt-30"></div>
+                        <div class="row hidden-xs">
+                            <div class="block-right-width">
+                                <span class="blue v-center text-a4" style="padding-right: 12px">Compartir</span>
+
+                                <a href="https://www.facebook.com/sharer.php?u=http://datosbogota.vivelabbogotadev.co/dataset/espacio-verde-por-habitante"><span
+                                        class="icon-facebook"
+                                        style="font-size: 30px; padding-left: 16px"><span
+                                        class="path1"><span class="path2"></span></span></span></a>
+                                <a href="https://twitter.com/share?url=http://datosbogota.vivelabbogotadev.co/dataset/espacio-verde-por-habitante"><span class="icon-twitter"
+                                                                                                                                                         style="font-size: 30px; padding-left: 16px"><span
+                                        class="path1"><span class="path2"></span></span></span></a>
+                                <a href="https://plus.google.com/share?url=http://datosbogota.vivelabbogotadev.co/dataset/espacio-verde-por-habitante"><span
+                                        class="icon-googleplus"
+                                        style="font-size: 30px; padding-left: 16px"><span
+                                        class="path1"><span
+                                        class="path2"></span><span class="path3"></span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="line-grey-light"></div>
+
+
+
+
+            <div class="container dataset-detail-content  fix-margin">
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <span class="blue-dark text-a3 dataset-link-blue bigger">Archivos</span>
+                    </div>
+
+                </div>
+
+                <div class="margin-bt-30"></div>
+
+
+
+
+
+
+
+
+
+                <div class="row dataset-item-file">
+                    <div class="col-md-1 col-xs-3">
+
+
+                        <a href="http://datosbogota.vivelabbogotadev.co/dataset/0662f21a-c8af-4635-b6f3-dea66d585cba/resource/60ff158e-762d-4ece-9c7b-cef0d2482aa6/download/datasetindicadoresdeespaciopublicoefectivov2.csv"><div class="format-type-detail csv text-center"><span
+                                class="glyphicon glyphicon-file center-icon-type"></span><br><span>CSV</span></div></a>
+
+
+
+
+                    </div>
+                    <div class="col-md-5 col-xs-9">
+                        <p>
+                            <span class="dataset-link-blue-middle text-a3 bigger">Conjunto de Datos</span>
+                            <br>
+
+                            <span class="gray text-a4">
+            Conjunto de Datos  en formato CSV
+            </span>
+
+
+                        </p>
+                    </div>
+                    <div class="col-md-6  col-xs-12">
+                        <div class="block-right-width v-center">
+                            <a type="button" class="btn btn-default background-blue block-right-width pull-down-button  resource-url-analytics" style="padding: 2px; margin-left: 32px" href="http://datosbogota.vivelabbogotadev.co/dataset/0662f21a-c8af-4635-b6f3-dea66d585cba/resource/60ff158e-762d-4ece-9c7b-cef0d2482aa6/download/datasetindicadoresdeespaciopublicoefectivov2.csv">
+                                <span class="glyphicon glyphicon-download" style=" padding-left: 5px"></span>
+                                <span class="text-a4" style="padding-left: 30px; padding-right: 30px">Descargar</span>
+                            </a>
+
+                            <a type="button" class="btn btn-default background-blue block-right-width pull-down-button hidden-xs" style="padding: 2px; margin-left: 32px" href="/dataset/espacio-verde-por-habitante/resource/60ff158e-762d-4ece-9c7b-cef0d2482aa6">
+                                <span class="glyphicon glyphicon-eye-open" style=" padding-left: 5px"></span>
+                                <span class="text-a4" style="padding-left: 20px; padding-right: 20px">Previsualización</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="line-grey-light"></div>
+
+
+
+
+
+
+
+
+                <div class="row dataset-item-file">
+                    <div class="col-md-1 col-xs-3">
+
+
+
+
+                        <a href="http://datosbogota.vivelabbogotadev.co/dataset/0662f21a-c8af-4635-b6f3-dea66d585cba/resource/cb41c197-9c52-4065-8129-fe2c6f6c19ff/download/espaciopublicoefectivoporhabitante.txt"><div class="format-type-detail xml text-center"><span
+                                class="glyphicon glyphicon-file center-icon-type"></span><br><span>TXT</span></div></a>
+
+
+                    </div>
+                    <div class="col-md-5 col-xs-9">
+                        <p>
+                            <span class="dataset-link-blue-middle text-a3 bigger">Descripcion de campos</span>
+                            <br>
+
+                            <span class="gray text-a4">
+            Descripcion de campos y caracteristicas en formato txt
+            </span>
+
+
+                        </p>
+                    </div>
+                    <div class="col-md-6  col-xs-12">
+                        <div class="block-right-width v-center">
+                            <a type="button" class="btn btn-default background-blue block-right-width pull-down-button  resource-url-analytics" style="padding: 2px; margin-left: 32px" href="http://datosbogota.vivelabbogotadev.co/dataset/0662f21a-c8af-4635-b6f3-dea66d585cba/resource/cb41c197-9c52-4065-8129-fe2c6f6c19ff/download/espaciopublicoefectivoporhabitante.txt">
+                                <span class="glyphicon glyphicon-download" style=" padding-left: 5px"></span>
+                                <span class="text-a4" style="padding-left: 30px; padding-right: 30px">Descargar</span>
+                            </a>
+
+                            <a type="button" class="btn btn-default background-blue block-right-width pull-down-button hidden-xs" style="padding: 2px; margin-left: 32px" href="/dataset/espacio-verde-por-habitante/resource/cb41c197-9c52-4065-8129-fe2c6f6c19ff">
+                                <span class="glyphicon glyphicon-eye-open" style=" padding-left: 5px"></span>
+                                <span class="text-a4" style="padding-left: 20px; padding-right: 20px">Previsualización</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="line-grey-light"></div>
+
+                <div class="margin-bt-30"></div>
+
+                <section>
+                    <div class="col-md-7 no-padding padding-mobile">
+                        <p class="additional-info-title text-a3">Información adicional</p>
+
+                        <table class="table additional-info-table">
+                            <tr>
+                                <td class="no-padding no-table-border" width="30%"><p class="dataset-name-aditional-info">Fuente:</p></td>
+                                <td class="no-padding no-table-border" width="70%">
+                                    <p class="aditional-info">
+                                        <a>
+
+
+
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="no-padding no-table-border"><p class="dataset-name-aditional-info">Autor:</p></td>
+                                <td class="no-padding no-table-border"><p class="aditional-info"></p></td>
+                            </tr>
+                            <tr>
+                                <td class="no-padding no-table-border"><p class="dataset-name-aditional-info">Licencia:</p></td>
+                                <td class="no-padding no-table-border"><p class="aditional-info">Creative Commons Attribution</p></td>
+                            </tr>
+                            <tr>
+                                <td class="no-padding no-table-border"><p class="dataset-name-aditional-info">id: </p></td>
+                                <td class="no-padding no-table-border"><p class="aditional-info">0662f21a-c8af-4635-b6f3-dea66d585cba</p></td>
+                            </tr>
+                            <tr>
+                                <td class="no-padding no-table-border"><p class="dataset-name-aditional-info">Package id:</p></td>
+                                <td class="no-padding no-table-border"><p class="aditional-info">0662f21a-c8af-4635-b6f3-dea66d585cba</p></td>
+                            </tr>
+                            <tr>
+                                <td class="no-padding no-table-border"><p class="dataset-name-aditional-info">Revision id: </p></td>
+                                <td class="no-padding no-table-border"><p class="aditional-info">56d1f6b6-36b7-4aef-842b-e09760299a44</p></td>
+                            </tr>
+                            <tr>
+                                <td class="no-padding no-table-border"><p class="dataset-name-aditional-info">State: </p></td>
+                                <td class="no-padding no-table-border"><p class="aditional-info">active</p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-offset-1 col-md-4">
+                        <div class="">
+                            <img src="/img/dataset.png" class="img-responsive" alt="" style="max-width: 320px;">
+                            <div class="margin-bt-20"></div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+
+        <div class="col-md-2 col-xs-6 white">
+
+            <ul class="nav-footer" style="padding-left: 0;">
+
+                <li><a href="/about">Acerca de Datos Abiertos </a></li>
+
+
+
+                <li><a href="http://docs.ckan.org/en/ckan-2.6.2/api/">API CKAN</a></li>
+                <li><a href="http://www.ckan.org/">CKAN Association</a></li>
+                <li><a href="http://www.opendefinition.org/okd/"><img src="/base/images/od_80x15_blue.png"></a></li>
+
+            </ul>
+
+        </div>
+        <div class="col-md-2 col-xs-6 col-md-offset-7">
+
+            <img class="block-right footer-logo" src="/img/logo_secretaria.svg" alt="">
+        </div>
+
+
+
+
+    </div>
+
+    </div>
+</footer>
+
+<script src="/js/vendor/modernizr.js"></script>
+<script src="/js/vendor/jquery.min.js"></script>
+<script src="/js/vendor/bootstrap.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</body>
+</html>
